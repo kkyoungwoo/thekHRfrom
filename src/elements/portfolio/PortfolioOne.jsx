@@ -6,38 +6,38 @@ import { FaSpinner } from "react-icons/fa";
 const filters = [
     {
       id: 1,
-      text: "전체",
+      text: "all",
     },
     {
       id: 2,
-      text: "취업",
+      text: "job",
     },
     {
       id: 3,
-      text: "거주",
+      text: "residence",
     },
     {
       id: 4,
-      text: "초대",
+      text: "invite",
     },
     {
       id: 5,
-      text: "결혼,이혼",
+      text: "marriage divorce",
     },
     {
       id: 6,
-      text: "재외동포",
+      text: "overseas koreans",
     },
     {
       id: 7,
-      text: "투자",
+      text: "investment",
     }
 ];
 
 const alldata = PortfolioData;
 const PortfolioOne = ({ Column }) => {
     const [getAllItems] = useState(alldata);
-    const [dataVisibleCount, setDataVisibleCount] = useState(100);
+    const [dataVisibleCount, setDataVisibleCount] = useState(50);
     const [dataIncrement] = useState(6) ;
     const [noMorePost, setNoMorePost] = useState(false);
     const [activeFilter, setActiveFilter] = useState("");

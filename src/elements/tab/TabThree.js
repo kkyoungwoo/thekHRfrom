@@ -67,11 +67,6 @@ const TabThree = () => {
                                                         <button>Development</button>
                                                     </div>   
                                                 </Tab>
-                                                <Tab>
-                                                    <div className="rn-tab-button">
-                                                        <button>Reporting</button>
-                                                    </div>   
-                                                </Tab>
                                             </TabList>
                                         </div>
 
