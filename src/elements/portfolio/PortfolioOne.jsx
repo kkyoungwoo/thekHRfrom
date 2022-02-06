@@ -6,26 +6,38 @@ import { FaSpinner } from "react-icons/fa";
 const filters = [
     {
       id: 1,
-      text: "All",
+      text: "전체",
     },
     {
       id: 2,
-      text: "design",
+      text: "취업",
     },
     {
       id: 3,
-      text: "artS",
+      text: "거주",
     },
     {
       id: 4,
-      text: "development",
+      text: "초대",
+    },
+    {
+      id: 5,
+      text: "결혼,이혼",
+    },
+    {
+      id: 6,
+      text: "재외동포",
+    },
+    {
+      id: 7,
+      text: "투자",
     }
 ];
 
 const alldata = PortfolioData;
 const PortfolioOne = ({ Column }) => {
     const [getAllItems] = useState(alldata);
-    const [dataVisibleCount, setDataVisibleCount] = useState(6);
+    const [dataVisibleCount, setDataVisibleCount] = useState(100);
     const [dataIncrement] = useState(6) ;
     const [noMorePost, setNoMorePost] = useState(false);
     const [activeFilter, setActiveFilter] = useState("");
@@ -51,24 +63,24 @@ const PortfolioOne = ({ Column }) => {
         setVisibleItems(tempData);
     };
 
-    const handleLoadmore = (e) => {
-        e.preventDefault();
-        let tempCount = dataVisibleCount + dataIncrement;
-        if (dataVisibleCount >= getAllItems.length) {
-            setNoMorePost(true);
-        } else {
-            setDataVisibleCount(tempCount);
-            if (activeFilter === filters[0].text.toLowerCase()) {
-                setVisibleItems(getAllItems.filter((data) => data.id <= tempCount));
-            }else {
-                setVisibleItems(
-                    getAllItems.filter(
-                      (data) => data.category === activeFilter && data.id <= tempCount
-                    )
-                );
-            }
-        }
-    }
+    //const handleLoadmore = (e) => {
+    //    e.preventDefault();
+    //    let tempCount = dataVisibleCount + dataIncrement;
+    //    if (dataVisibleCount >= getAllItems.length) {
+    //        setNoMorePost(true);
+    //    } else {
+    //        setDataVisibleCount(tempCount);
+    //        if (activeFilter === filters[0].text.toLowerCase()) {
+    //            setVisibleItems(getAllItems.filter((data) => data.id <= tempCount));
+    //        }else {
+    //            setVisibleItems(
+    //                getAllItems.filter(
+    //                  (data) => data.category === activeFilter && data.id <= tempCount
+    //                )
+    //            );
+    //        }
+    //    }
+    //}
     
     return (
         <>
@@ -101,7 +113,7 @@ const PortfolioOne = ({ Column }) => {
                 ))}
             </div>
 
-            <div className="row row--15">
+            {/*<div className="row row--15">
                 <div className="col-lg-12">
                     <div className="rwt-load-more text-center mt--50">
                         <button
@@ -122,7 +134,7 @@ const PortfolioOne = ({ Column }) => {
                         </button>
                     </div>
                 </div>
-            </div>
+            </div> */}
         </>
     )
 }

@@ -2,7 +2,7 @@ import React from 'react';
 import PortfolioDetailsContent from "../elements/portfolio/PortfolioDetailsContent";
 import PortfolioData from "../data/portfolio/PortfolioData.json";
 import SEO from "../common/SEO";
-import Layout from "../common/Layout";
+import Layout from "../common/Layout";;
 
 
 const PortfolioDetails = ({match: {params: {id}}}) => {
@@ -10,7 +10,7 @@ const PortfolioDetails = ({match: {params: {id}}}) => {
     const data = PortfolioData.filter(portfolio => portfolio.id === portfolioId);
     return (
         <>
-            <SEO title="Portfolio Details || Doob" />
+            <SEO title="THE K || Details" />
             <Layout>
                 <PortfolioDetailsContent data={data[0]} />
             </Layout>
