@@ -97,12 +97,18 @@
 @import 'footer/copyright';
 @import 'footer/darkmode';
 body{
-    .skiptranslate {
-        .goog-te-banner {
-            display: none;
+    #google_translate_element{
+        select {
+            padding-right: 10px;
+            height : 100%;
         }
+        .skiptranslate {
+            .goog-te-banner {
+                display: none;
+            }
 
-        font-size: 0px;
+            font-size: 0px;
+        }
     }
 }
 

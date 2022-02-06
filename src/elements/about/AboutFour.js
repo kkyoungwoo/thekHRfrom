@@ -49,9 +49,6 @@ const AboutFour = ({image}) => {
                                         </div>
                                     </li>
                                 </ul>
-                                <div className="about-btn mt--30">
-                                    <a className="btn-default" href="#">About Our Doob</a>
-                                </div>
                             </div>
                         </div>
                     </div>

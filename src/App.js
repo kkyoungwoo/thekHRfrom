@@ -65,7 +65,43 @@ import BlogListView from "./components/blog/BlogListView";
 import BlogGridSidebar from "./components/blog/BlogGridSidebar";
 import BlogListSidebar from "./components/blog/BlogListSidebar";
 import BlogDetails from "./pages/BlogDetails";
+
 import Error from "./pages/Error";
+
+import typeofvisa from "./pages/visa/Typeofvisa";
+import employmentvisa from "./pages/visa/Employmentvisa";
+import investmentvisa from "./pages/visa/Investmentvisa";
+import residencevisa from "./pages/visa/Residencevisa";
+import marriagevisa from "./pages/visa/Marriagevisa";
+import overseaskoreansvisa from "./pages/visa/Overseaskoreansvisa";
+
+import D2 from "./pages/studying/D2";
+import D4 from "./pages/studying/D4";
+
+import Residentregistration from "./pages/registration/Residentregistration";
+import Familyrelationship from "./pages/registration/Familyrelationship";
+import Myselfregistration from "./pages/registration/Myselfregistration";
+import Parentalregistration from "./pages/registration/Parentalregistration";
+import Descendantregistration from "./pages/registration/Descendantregistration";
+import Guardiansregistration from "./pages/registration/Guardiansregistration";
+import Orphanregistration from "./pages/registration/Orphanregistration";
+import Onotherregistration from "./pages/registration/Onotherregistration";
+
+
+import Illegalitylitigation from "./pages/litigation/Illegalitylitigation";
+import Protectionlitigation from "./pages/litigation/Protectionlitigation";
+import Criminallitigation from "./pages/litigation/Criminallitigation";
+import Civillitigation from "./pages/litigation/Civillitigation";
+import Administrativelitigation from "./pages/litigation/Administrativelitigation";
+import Familylitigation from "./pages/litigation/Familylitigation";
+
+import Visainquiry from "./pages/inquiry/Visainquiry";
+import Workinquiry from "./pages/inquiry/Workinquiry";
+import Agencyinquiry from "./pages/inquiry/Agencyinquiry";
+import Price from "./pages/inquiry/Price";
+import Paidinquiry from "./pages/inquiry/Paidinquiry";
+import Purchasedata from "./pages/inquiry/Purchasedata";
+import Introduction from "./pages/inquiry/Introduction";
 
 
 // Import Css Here 
@@ -73,63 +109,59 @@ import './assets/scss/style.scss';
 
 
 const App = () => {
+    
     return (
         <Router>
             <PageScrollTop>
                 <Switch>
+                    {/* */}
                     <Route path={`${process.env.PUBLIC_URL + "/"}`} exact component={Consulting}/>
-                    <Route path={`${process.env.PUBLIC_URL + "/business-consulting"}`} exact component={HomeDefault}/>
-                    <Route path={`${process.env.PUBLIC_URL + "/business-consulting-2"}`} exact component={BusinessConsulting2}/>
+                    
+                    <Route path={`${process.env.PUBLIC_URL + "/typeofvisa"}`} exact component={typeofvisa}/>
+                    <Route path={`${process.env.PUBLIC_URL + "/employmentvisa"}`} exact component={employmentvisa}/>
+                    <Route path={`${process.env.PUBLIC_URL + "/investmentvisa"}`} exact component={investmentvisa}/>
+                    <Route path={`${process.env.PUBLIC_URL + "/residencevisa"}`} exact component={residencevisa}/>
+                    <Route path={`${process.env.PUBLIC_URL + "/marriagevisa"}`} exact component={marriagevisa}/>                    
+                    <Route path={`${process.env.PUBLIC_URL + "/overseaskoreansvisa"}`} exact component={overseaskoreansvisa}/>
+
+                    <Route path={`${process.env.PUBLIC_URL + "/d2"}`} exact component={D2}/>
+                    <Route path={`${process.env.PUBLIC_URL + "/d4"}`} exact component={D4}/>
+                    
+                    <Route path={`${process.env.PUBLIC_URL + "/residentregistration"}`} exact component={Residentregistration}/>
+                    <Route path={`${process.env.PUBLIC_URL + "/familyrelationship"}`} exact component={Familyrelationship}/>
+                    <Route path={`${process.env.PUBLIC_URL + "/myselfregistration"}`} exact component={Myselfregistration}/>
+                    <Route path={`${process.env.PUBLIC_URL + "/parentalregistration"}`} exact component={Parentalregistration}/>
+                    <Route path={`${process.env.PUBLIC_URL + "/descendantregistration"}`} exact component={Descendantregistration}/>                    
+                    <Route path={`${process.env.PUBLIC_URL + "/guardiansregistration"}`} exact component={Guardiansregistration}/>
+                    <Route path={`${process.env.PUBLIC_URL + "/orphanregistration"}`} exact component={Orphanregistration}/>                    
+                    <Route path={`${process.env.PUBLIC_URL + "/onotherregistration"}`} exact component={Onotherregistration}/>
+
+                    <Route path={`${process.env.PUBLIC_URL + "/illegalitylitigation"}`} exact component={Illegalitylitigation}/>
+                    <Route path={`${process.env.PUBLIC_URL + "/protectionlitigation"}`} exact component={Protectionlitigation}/>                    
+                    <Route path={`${process.env.PUBLIC_URL + "/criminallitigation"}`} exact component={Criminallitigation}/>
+                    <Route path={`${process.env.PUBLIC_URL + "/civillitigation"}`} exact component={Civillitigation}/>                    
+                    <Route path={`${process.env.PUBLIC_URL + "/administrativelitigation"}`} exact component={Administrativelitigation}/>
+                    <Route path={`${process.env.PUBLIC_URL + "/familylitigation"}`} exact component={Familylitigation}/>
+
+                    <Route path={`${process.env.PUBLIC_URL + "/visainquiry"}`} exact component={Visainquiry}/>
+                    <Route path={`${process.env.PUBLIC_URL + "/workinquiry"}`} exact component={Workinquiry}/>                    
+                    <Route path={`${process.env.PUBLIC_URL + "/agencyinquiry"}`} exact component={Agencyinquiry}/>
+                    <Route path={`${process.env.PUBLIC_URL + "/Price"}`} exact component={Price}/>                    
+                    <Route path={`${process.env.PUBLIC_URL + "/paidinquiry"}`} exact component={Paidinquiry}/>
+                    <Route path={`${process.env.PUBLIC_URL + "/purchasedata"}`} exact component={Purchasedata}/>
+                    <Route path={`${process.env.PUBLIC_URL + "/introduction"}`} exact component={Introduction}/>
+
+
+
+                    <Route path={`${process.env.PUBLIC_URL + "/international-consulting"}`} exact component={InternationalConsulting}/>
                     <Route path={`${process.env.PUBLIC_URL + "/corporate"}`} exact component={Corporate}/>
                     <Route path={`${process.env.PUBLIC_URL + "/business"}`} exact component={Business}/>
-                    <Route path={`${process.env.PUBLIC_URL + "/digital-agency"}`} exact component={DigitalAgency}/>
-                    <Route path={`${process.env.PUBLIC_URL + "/finance"}`} exact component={Finance}/>
-                    <Route path={`${process.env.PUBLIC_URL + "/company"}`} exact component={Company}/>
-                    <Route path={`${process.env.PUBLIC_URL + "/marketing"}`} exact component={Marketing}/>
-                    <Route path={`${process.env.PUBLIC_URL + "/travel-agency"}`} exact component={TravelAgency}/>
-                    <Route path={`${process.env.PUBLIC_URL + "/consulting"}`} exact component={Splash}/>
-                    <Route path={`${process.env.PUBLIC_URL + "/seo-agency"}`} exact component={SeoAgency}/>
-                    <Route path={`${process.env.PUBLIC_URL + "/personal-portfolio"}`} exact component={PersonalPortfolio}/>
-                    <Route path={`${process.env.PUBLIC_URL + "/event-conference"}`} exact component={EventConference}/>
-                    <Route path={`${process.env.PUBLIC_URL + "/creative-portfolio"}`} exact component={CreativePortfolio}/>
-                    <Route path={`${process.env.PUBLIC_URL + "/freelancer"}`} exact component={Freelancer}/>
-                    <Route path={`${process.env.PUBLIC_URL + "/international-consulting"}`} exact component={InternationalConsulting}/>
-                    <Route path={`${process.env.PUBLIC_URL + "/startup"}`} exact component={Startup}/>
-                    <Route path={`${process.env.PUBLIC_URL + "/web-agency"}`} exact component={WebAgency}/>
 
-                    {/* Blog Part  */}
-                    <Route path={`${process.env.PUBLIC_URL + "/blog-grid"}`} exact component={BlogGridView}/>
-                    <Route path={`${process.env.PUBLIC_URL + "/blog-list-view"}`} exact component={BlogListView}/>
-                    <Route path={`${process.env.PUBLIC_URL + "/blog-grid-sidebar"}`} exact component={BlogGridSidebar}/>
-                    <Route path={`${process.env.PUBLIC_URL + "/blog-list-sidebar"}`} exact component={BlogListSidebar}/>
-                    <Route path={`${process.env.PUBLIC_URL + "/blog-details/:id"}`} exact component={BlogDetails}/>
-                    <Route path={`${process.env.PUBLIC_URL + "/category/:slug"}`} exact component={CategoryList}/>
-                    <Route path={`${process.env.PUBLIC_URL + "/archive/:slug"}`} exact component={Author}/>
-                    <Route path={`${process.env.PUBLIC_URL + "/tag/:slug"}`} exact component={TagList}/>
-
-                    <Route path={`${process.env.PUBLIC_URL + "/elements"}`} exact component={Elements}/>
-                    <Route path={`${process.env.PUBLIC_URL + "/button"}`} exact component={Button}/>
-                    <Route path={`${process.env.PUBLIC_URL + "/service"}`} exact component={Service}/>
-                    <Route path={`${process.env.PUBLIC_URL + "/counter"}`} exact component={CounterUp}/>
-                    <Route path={`${process.env.PUBLIC_URL + "/progressbar"}`} exact component={Progressbar}/>
-                    <Route path={`${process.env.PUBLIC_URL + "/social-share"}`} exact component={Social}/>
-                    <Route path={`${process.env.PUBLIC_URL + "/team"}`} exact component={Team}/>
-                    <Route path={`${process.env.PUBLIC_URL + "/testimonial"}`} exact component={Testimonial}/>
-                    <Route path={`${process.env.PUBLIC_URL + "/timeline"}`} exact component={Timeline}/>
                     <Route path={`${process.env.PUBLIC_URL + "/accordion"}`} exact component={RnAccordion}/>
-                    <Route path={`${process.env.PUBLIC_URL + "/tab"}`} exact component={Tab}/>
-                    <Route path={`${process.env.PUBLIC_URL + "/pricing"}`} exact component={Pricing}/>
-                    <Route path={`${process.env.PUBLIC_URL + "/split"}`} exact component={Split}/>
-                    <Route path={`${process.env.PUBLIC_URL + "/call-to-action"}`} exact component={CalltoAction}/>
-                    <Route path={`${process.env.PUBLIC_URL + "/video-popup"}`} exact component={Video}/>
-                    <Route path={`${process.env.PUBLIC_URL + "/gallery"}`} exact component={Gallery}/>
                     <Route path={`${process.env.PUBLIC_URL + "/contact"}`} exact component={Contact}/>
-                    <Route path={`${process.env.PUBLIC_URL + "/brand"}`} exact component={Brand}/>
-                    <Route path={`${process.env.PUBLIC_URL + "/advance-tab"}`} exact component={AdvanceTab}/>
-                    <Route path={`${process.env.PUBLIC_URL + "/advance-pricing"}`} exact component={AdvancePricing}/>
-                    <Route path={`${process.env.PUBLIC_URL + "/about-us"}`} exact component={AboutUs}/>
 
                     <Route path={`${process.env.PUBLIC_URL + "/error"}`} exact component={Error}/>
+                    <Route path="*" component={Error} exact />
                     
                     <Route path={`${process.env.PUBLIC_URL + "/portfolio"}`} exact component={Portfolio}/>
                     <Route path={`${process.env.PUBLIC_URL + "/portfolio-three-column"}`} exact component={portfolioThreeColumn}/>

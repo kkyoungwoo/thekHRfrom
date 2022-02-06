@@ -27,7 +27,6 @@ const BusinessConsulting2 = () => {
         <>
             <SEO title="Business Consulting 02" />
             <main className="page-wrapper">
-                <HeaderTopNews />
                 <HeaderTwo btnStyle="round" HeaderSTyle="header-not-transparent" />
 
                 {/* Start Slider Area  */}

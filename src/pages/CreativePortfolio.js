@@ -19,7 +19,6 @@ const CreativePortfolio = () => {
         <>
             <SEO title="Creative Portfolio" />
             <main className="page-wrapper">
-                <HeaderTopBar />
                 <HeaderOne btnStyle="btn-small round btn-icon" HeaderSTyle="header-not-transparent" />
 
                 {/* Start Slider area  */}

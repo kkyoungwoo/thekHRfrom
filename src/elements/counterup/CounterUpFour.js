@@ -4,20 +4,20 @@ import TrackVisibility from "react-on-screen";
 
 const Data = [
     {
-        countNum : 199,
-        countTitle: 'Happy Clients.',
-    },
-    {
-        countNum : 575,
-        countTitle: 'Employees',
-    },
-    {
-        countNum : 69,
-        countTitle: 'Useful Programs',
-    },
-    {
         countNum : 500,
-        countTitle: 'Useful Programs',
+        countTitle: '행복한 의뢰인',
+    },
+    {
+        countNum : 100,
+        countTitle: '소개받은 의뢰인',
+    },
+    {
+        countNum : 50,
+        countTitle: '재방문 의뢰인',
+    },
+    {
+        countNum : 5,
+        countTitle: '협력업체',
     },
 ];
 const CounterUpFour = ({textALign, counterStyle, column}) => {

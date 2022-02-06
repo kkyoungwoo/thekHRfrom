@@ -22,8 +22,6 @@ const Marketing = () => {
         <>
             <SEO title="Marketing" />
             <main className="page-wrapper">
-                
-                <HeaderTopBar />
                 <HeaderOne btnStyle="btn-small round btn-icon" HeaderSTyle="header-not-transparent" />
 
 

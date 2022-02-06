@@ -1,7 +1,7 @@
 import React from 'react'
 import SEO from "../common/SEO";
 import {Link} from "react-router-dom";
-import HeaderTwo from '../common/header/HeaderTwo';
+import HeaderOne from '../common/header/HeaderOne';
 import FooterFour from '../common/footer/FooterFour';
 
 import Slider from "react-slick";
@@ -42,8 +42,7 @@ const DigitalAgency = () => {
         <>
             <SEO title="Digital Agency" />
             <main className="page-wrapper">
-                
-                <HeaderTwo btnStyle="btn-small" HeaderSTyle="header-transparent" />
+                <HeaderOne btnStyle="btn-small" HeaderSTyle="header-not-transparent" />
 
                 {/* Start Slider Area  */}
                 <Slider className="slider-area slider-style-4 slider-dot rn-slick-dot rn-slick-arrow" {...BannerActivation}>

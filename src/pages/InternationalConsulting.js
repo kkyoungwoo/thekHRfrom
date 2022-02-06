@@ -2,7 +2,7 @@ import React from 'react';
 import {Link} from "react-router-dom";
 import { FiArrowRight } from "react-icons/fi";
 import SEO from "../common/SEO";
-import HeaderTwo from '../common/header/HeaderTwo';
+import HeaderOne from '../common/header/HeaderOne';
 import TabThree from '../elements/tab/TabThree';
 import SectionTitle from "../elements/sectionTitle/SectionTitle";
 import SlipFour from "../elements/split/SlipFour";
@@ -23,7 +23,7 @@ const InternationalConsulting = () => {
         <>
             <SEO title="International Consulting" />
             <main className="page-wrapper">
-                <HeaderTwo btnStyle="btn-small btn-icon" HeaderSTyle="header-transparent" />
+                <HeaderOne btnStyle="btn-small" HeaderSTyle="header-not-transparent" />
 
                 {/* Start Slider Area  */}
                 <div className="slider-area slider-style-1 variation-default height-850 bg_image" data-black-overlay="7" style={{backgroundImage: `url(${process.env.PUBLIC_URL}/images/bg/bg-image-18.jpg)`}}>

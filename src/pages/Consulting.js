@@ -22,13 +22,13 @@ const Consulting = () => {
                 <HeaderOne btnStyle="btn-small" HeaderSTyle="header-transparent" />
 
                 {/* Start Slider area  */}
-                <div className="slider-area slider-style-2 variation-2  height-850 bg_image" style={{backgroundImage: `url(${process.env.PUBLIC_URL}/images/bg/bg-image-10.jpg)`}}>
+                <div className="slider-area slider-style-2 variation-2  height-850 bg_image" style={{backgroundImage: `url(${process.env.PUBLIC_URL}/images/bg/main_bg.png)`}}>
                     <div className="container">
                         <div className="row">
                             <div className="col-lg-8 col-xl-6">
                                 <div className="inner text-left">
-                                    <h1 className="title display-one">We provide <br /> reliable business <br /> consulting help.</h1>
-                                    <h6 className="tag-title">SOLUTION FOR YOUR BUSINESS</h6>
+                                    <h1 className="title display-one">비자발급에는 <br /> 계획과 실력이 <br /> 아주 중요합니다</h1>
+                                    <h6 className="tag-title">SOLUTION FOR YOUR VISA ISSUANCE</h6>
                                 </div>
                             </div>
                         </div>
@@ -63,6 +63,7 @@ const Consulting = () => {
                                 />
                             </div>
                         </div>
+                        ㅁㄴㅇ
                         <AdvanceTabTwo />
                     </div>
                 </div>
@@ -89,7 +90,6 @@ const Consulting = () => {
                     </div>
                 </div>
                 {/* End Elements Area  */}
-
 
                 {/* Start Elements Area  */}
                 <div className="rwt-callto-action-area rn-section-gapBottom">

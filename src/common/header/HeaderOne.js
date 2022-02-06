@@ -38,9 +38,7 @@ const HeaderOne = ({btnStyle, HeaderSTyle}) => {
                                 <nav className="mainmenu-nav d-none d-lg-block">
                                     <Nav />
                                 </nav>
-                                <div className="header-btn" >
-                                    <div id="google_translate_element"></div>
-                                </div>
+                                <div id="google_translate_element"></div>
                                 <div className="mobile-menu-bar ml--5 d-block d-lg-none">
                                     <div className="hamberger">
                                         <span className="hamberger-button" onClick={onCanvasHandler}><FiMenu /></span>
