@@ -123,3 +123,7 @@ body{
 body .skiptranslate iframe{
     display: none;
 }
+
+.none_pointer{
+    pointer-events: none;
+}

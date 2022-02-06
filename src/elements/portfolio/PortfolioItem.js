@@ -19,7 +19,7 @@ const PortfolioItem = ({ portfolio }) => {
                             {portfolio.title}
                         </Link>
                     </h5>
-                    <span className="subtitle b2 text-capitalize">{portfolio.category}</span>
+                    <span className="subtitle b2 text-capitalize">{portfolio.date}</span>
                 </div>
             </div>
         </div>

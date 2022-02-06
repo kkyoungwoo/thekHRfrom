@@ -4,16 +4,19 @@ import {Link} from "react-router-dom";
 const Nav = () => {
     return (
         <ul className="mainmenu">
-            <li className="has-droupdown"><Link to="#">비자종류</Link>
-                <ul className="submenu">
+            <li><Link to="/typeofvisa">비자 안내</Link></li>
+            {/*
+            <li className="has-droupdown"><Link to="#">비자 안내</Link>
+                {<ul className="submenu">
                     <li><Link to="/typeofvisa">비자 종류</Link></li>
                     <li><Link to="/employmentvisa">취업</Link></li>
                     <li><Link to="/investmentvisa">투자</Link></li>
                     <li><Link to="/residencevisa">거주 / 초대</Link></li>
                     <li><Link to="/marriagevisa">결혼 / 이혼</Link></li>
                     <li><Link to="/overseaskoreansvisa">재외동포</Link></li>
-                </ul>
+                </ul>}
             </li>
+             */}
 
             <li className="has-droupdown"><Link to="#">유학</Link>
                 <ul className="submenu">

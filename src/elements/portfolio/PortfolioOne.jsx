@@ -7,30 +7,37 @@ const filters = [
     {
       id: 1,
       text: "all",
+      texter: "모든 비자",
     },
     {
       id: 2,
-      text: "job",
+      text: "2",
+      texter: "취업",
     },
     {
       id: 3,
-      text: "residence",
+      text: "3",
+      texter: "거주",
     },
     {
       id: 4,
-      text: "invite",
+      text: "4",
+      texter: "초대",
     },
     {
       id: 5,
-      text: "marriage divorce",
+      text: "5",
+      texter: "결혼 / 이혼",
     },
     {
       id: 6,
-      text: "overseas koreans",
+      text: "6",
+      texter: "재외동포",
     },
     {
       id: 7,
-      text: "investment",
+      text: "7",
+      texter: "투자",
     }
 ];
 
@@ -49,14 +56,14 @@ const PortfolioOne = ({ Column }) => {
 
     const handleChange = (e) => {
         e.preventDefault();
-        setActiveFilter(e.target.textContent.toLowerCase());
+        setActiveFilter(e.target.className);
         let tempData;
-        if (e.target.textContent.toLowerCase() === filters[0].text.toLowerCase()) {
+        if (e.target.className === filters[0].text.toLowerCase()) {
           tempData = getAllItems.filter((data) => data.id <= dataVisibleCount);
         } else {
           tempData = getAllItems.filter(
             (data) =>
-              data.category === e.target.textContent.toLowerCase() &&
+              data.category === e.target.className &&
               data.id <= dataVisibleCount
           );
         }
@@ -94,10 +101,12 @@ const PortfolioOne = ({ Column }) => {
                             className={
                                 filter.text.toLowerCase() === activeFilter
                                 ? "current"
-                                : " "
+                                : filter.text
                             }
                             >
-                            {filter.text}
+                            <div className="none_pointer">
+                                {filter.texter}
+                            </div>
                             </button>
                         </li>
                         ))}
