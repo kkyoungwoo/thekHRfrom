@@ -3,7 +3,8 @@ import SEO from "../common/SEO";
 import HeaderOne from '../common/header/HeaderOne';
 import HeaderTopBar from '../common/header/HeaderTopBar';
 import AboutFour from '../elements/about/AboutFour';
-import AdvanceTabTwo from '../elements/advancetab/AdvanceTabTwo';
+import TabTwo from '../elements/tab/TabThree';
+
 import CounterUpFour from '../elements/counterup/CounterUpFour';
 import CalltoActionFive from '../elements/calltoaction/CalltoActionFive';
 import TeamFour from '../elements/team/TeamFour';
@@ -63,8 +64,7 @@ const Consulting = () => {
                                 />
                             </div>
                         </div>
-                        ㅁㄴㅇ
-                        <AdvanceTabTwo />
+                        <TabTwo />
                     </div>
                 </div>
                 {/* End Elements Area  */}
@@ -72,24 +72,6 @@ const Consulting = () => {
 
                 <Separator />
 
-                {/* Start Elements Area  */}
-                <div className="rwt-team-area rn-section-gap">
-                    <div className="wrapper plr--65 plr_sm--15">
-                        <div className="row mb--20">
-                            <div className="col-lg-12">
-                                <SectionTitle
-                                    textAlign = "text-center"
-                                    radiusRounded = ""
-                                    subtitle = "Our Experts."
-                                    title = "Our Experts"
-                                    description = ""
-                                />
-                            </div>
-                        </div>
-                        <TeamFour column="col-lg-6 col-xl-3 col-md-6 col-12 mt--30" teamStyle="team-style-three" />
-                    </div>
-                </div>
-                {/* End Elements Area  */}
 
                 {/* Start Elements Area  */}
                 <div className="rwt-callto-action-area rn-section-gapBottom">

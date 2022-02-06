@@ -14,7 +14,7 @@ const filters = [
     },
     {
       id: 3,
-      text: "art",
+      text: "artS",
     },
     {
       id: 4,
