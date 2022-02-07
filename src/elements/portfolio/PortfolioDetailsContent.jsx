@@ -89,16 +89,16 @@ const PortfolioDetailsContent = ({ data }) => {
                                             <h4 className="title">{data.title}</h4>
                                             <div className="single-list-wrapper">
                                                 <div className="single-list">
-                                                    <label>Date:</label>
+                                                    <label>분류:</label>
                                                     <span>{data.date}</span>
                                                 </div>
                                                 <div className="single-list">
-                                                    <label>Client:</label>
+                                                    <label>요약:</label>
                                                     <span>{data.client}</span>
                                                 </div>
                                                 <div className="single-list">
-                                                    <label>Category:</label>
-                                                    <span>{data.category}</span>
+                                                    <label>심사 기간:</label>
+                                                    <span>{data.month}</span>
                                                 </div>
                                             </div>
                                             <div className="view-btn mt--50">

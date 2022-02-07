@@ -3,42 +3,30 @@ import SEO from "../../common/SEO";
 import Layout from "../../common/Layout";
 import BreadcrumbOne from "../../elements/breadcrumb/BreadcrumbOne";
 
-const Data = 
+const data = 
 {
-        "id": 1,
-        "portfolioImage": "./images/portfolio/portfolio-05.jpg",
-        "image": "images/portfolio/portfolio-05.jpg",
-        "title": "React Development",
-        "subtitle": "Awesome portfolio",
-        "date": "01 March 2021",
-        "client": "Rainbow Themes",
-        "category": "design",
-        "awards": ["2020 Design beautiful apps Finale Awards"],
-        "excerpt": "Design beautiful apps.",
-        "body": ["<p>In a typical React application, data is passed top-down (parent to child) via props, but such usage can be cumbersome for certain types of props (e.g. locale preference, UI theme).</p> <br /> <p>that are required by many components within an application. Context provides a way to share values like these between components without having to explicitly pass a prop through every level of the tree.</p> <br /> <p>that are required by many components within an application. Context provides a way to share values like these between components without having to explicitly pass a prop through every level of the tree.</p>"],
-        "btn": {
-            "buttontext": "더 알아보기",
-            "link": "/"
-        },
-        "largeImage": "images/portfolio/portfolio-05.jpg",
-        "subContent": {
-            "title": "Digital Marketing.",
-            "subtext": "We provide digital experience services to startups and small businesses. We help our clients succeed by creating brand identities."
-        },
-        "subContent2": {
-            "title": "App Development.",
-            "subtext": "We provide App Development services to startups and small businesses. We help our clients succeed by creating brand identities."
-        },
-        "subContent3": {
-            "title": "Solution.",
-            "subtext": "We provide problem solutions services to startups and small businesses. We help our clients succeed by creating brand identities."
-        },
-        "gallery": {
-            "imageOne": "images/portfolio/portfolio-01.jpg",
-            "imageTwo": "images/portfolio/portfolio-02.jpg",
-            "imageThree": "images/portfolio/portfolio-03.jpg"
-        }
+    "id": 1,
+    "title": "본인 등록신고",
+    "date": "행정 민원",
+    "client": "본인이 등록",
+    "month":"빠른 심사",
+    
+    "subtitle": "상세 내용",
+    "body": ["<p>상황에 따라 심사기간이 변동될 수 있습니다</p><br/><p>※ 개인의 신분과 관련된 민원으로서 행정당국은 대리 및 대행을 매우 엄격하게 제한하고 있습니다. 당사무소는 각종 신고서, 신청서 작성만 대행하며 민원서류 제출은 고객이 직접 해야 합니다.</p>"],
+
+    "subContent": {
+        "title": "발급 조건 1",
+        "subtext": ["<p>111</p><br /><p>111</p> <br /> <p>111</p> <br /> <p>111</p>"]
+    },
+    "subContent2": {
+        "title": "발급 조건 2",
+        "subtext": ["<p>222</p><br /><p>222</p> <br /> <p>222</p> <br /> <p>222</p>"]
+    },
+    "subContent3": {
+        "title": "발급 조건 3",
+        "subtext": ["<p>333</p><br /><p>333</p> <br /> <p>333</p> <br /> <p>333</p>"]
     }
+}
 
 const Familyrelationship = () => {
     return (
@@ -46,7 +34,7 @@ const Familyrelationship = () => {
             <SEO title="Portfolio Three Column || Doob - React Business  Template" />
             <Layout>
                 <BreadcrumbOne 
-                    title="Familyrelationship <br /> Quick Copy & Make site."
+                    title="Myselfregistration <br /> Quick Copy & Make site."
                     rootUrl="/"
                     parentUrl="Home"
                     currentUrl="Portfolio Three Column"
@@ -58,53 +46,44 @@ const Familyrelationship = () => {
                                 <div className="inner">
                                     <div className="details-list">
                                         <div className="thumbnail alignwide">
-                                            <img className="radius w-100" src={`${process.env.PUBLIC_URL}/${Data.largeImage}`} alt="Corporate Image" />
                                         </div>
                                         <div className="row mt--40 row--30">
-                                            <div className="col-lg-6">
+                                            <div className="col-lg-12">
                                                 <div className="content-left">
-                                                    <h4 className="title">{Data.title}</h4>
+                                                    <h4 className="title">{data.title}</h4>
                                                     <div className="single-list-wrapper">
                                                         <div className="single-list">
-                                                            <label>Date:</label>
-                                                            <span>{Data.date}</span>
+                                                            <label>분류:</label>
+                                                            <span>{data.date}</span>
                                                         </div>
                                                         <div className="single-list">
-                                                            <label>Client:</label>
-                                                            <span>{Data.client}</span>
+                                                            <label>요약:</label>
+                                                            <span>{data.client}</span>
                                                         </div>
                                                         <div className="single-list">
-                                                            <label>Category:</label>
-                                                            <span>{Data.category}</span>
+                                                            <label>심사 기간:</label>
+                                                            <span>{data.month}</span>
                                                         </div>
+                                                    </div>
+                                                </div>
+                                                <div className="col mt--120">
+                                                    <h3 className="subtitle">{data.subtitle}</h3>
+                                                    <div className="description" dangerouslySetInnerHTML={{__html: data.body}}></div>
+                                                    
+                                                    <div className="view-btn mt--50">
+                                                        <h5 className="subtitle">{data.subContent.title}</h5>
+                                                        <div className="description" dangerouslySetInnerHTML={{__html: data.subContent.subtext}}></div>
                                                     </div>
                                                     <div className="view-btn mt--50">
-                                                        <a className="btn-default btn-large round" href="/">{Data.btn.buttontext}</a>
+                                                        <h5 className="subtitle">{data.subContent2.title}</h5>
+                                                        <div className="description" dangerouslySetInnerHTML={{__html: data.subContent2.subtext}}></div>
                                                     </div>
+                                                    <div className="view-btn mt--50">
+                                                        <h5 className="subtitle">{data.subContent3.title}</h5>
+                                                        <div className="description" dangerouslySetInnerHTML={{__html: data.subContent3.subtext}}></div>
+                                                    </div>
+
                                                 </div>
-                                            </div>
-                                            <div className="col-lg-6 mt_md--30 mt_sm--30">
-                                                <div className="content-right">
-                                                    <h5 className="subtitle">{Data.subtitle}</h5>
-                                                    <div className="description" dangerouslySetInnerHTML={{__html: Data.body}}></div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div className="portfolio-gallery mt--40">
-                                        <div className="gallery mt--30">
-                                            <div className="thumbnail">
-                                                <img className="radius w-100" src={`${process.env.PUBLIC_URL}/${Data.gallery.imageOne}`} alt="Corporate Image" />
-                                            </div>
-                                        </div>
-                                        <div className="gallery mt--30">
-                                            <div className="thumbnail">
-                                                <img className="radius w-100" src={`${process.env.PUBLIC_URL}/${Data.gallery.imageTwo}`} alt="Corporate Image" />
-                                            </div>
-                                        </div>
-                                        <div className="gallery mt--30">
-                                            <div className="thumbnail">
-                                                <img className="radius w-100" src={`${process.env.PUBLIC_URL}/${Data.gallery.imageThree}`} alt="Corporate Image" />
                                             </div>
                                         </div>
                                     </div>

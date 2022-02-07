@@ -1,56 +1,48 @@
 import React from 'react';
 import SEO from "../../common/SEO";
 import Layout from "../../common/Layout";
-import BreadcrumbOne from "../../elements/breadcrumb/BreadcrumbOne";
 
-const Data = 
+const data = 
 {
-        "id": 1,
-        "portfolioImage": "./images/portfolio/portfolio-05.jpg",
-        "image": "images/portfolio/portfolio-05.jpg",
-        "title": "React Development",
-        "subtitle": "Awesome portfolio",
-        "date": "01 March 2021",
-        "client": "Rainbow Themes",
-        "category": "design",
-        "awards": ["2020 Design beautiful apps Finale Awards"],
-        "excerpt": "Design beautiful apps.",
-        "body": ["<p>In a typical React application, data is passed top-down (parent to child) via props, but such usage can be cumbersome for certain types of props (e.g. locale preference, UI theme).</p> <br /> <p>that are required by many components within an application. Context provides a way to share values like these between components without having to explicitly pass a prop through every level of the tree.</p> <br /> <p>that are required by many components within an application. Context provides a way to share values like these between components without having to explicitly pass a prop through every level of the tree.</p>"],
-        "btn": {
-            "buttontext": "더 알아보기",
-            "link": "/"
-        },
-        "largeImage": "images/portfolio/portfolio-05.jpg",
-        "subContent": {
-            "title": "Digital Marketing.",
-            "subtext": "We provide digital experience services to startups and small businesses. We help our clients succeed by creating brand identities."
-        },
-        "subContent2": {
-            "title": "App Development.",
-            "subtext": "We provide App Development services to startups and small businesses. We help our clients succeed by creating brand identities."
-        },
-        "subContent3": {
-            "title": "Solution.",
-            "subtext": "We provide problem solutions services to startups and small businesses. We help our clients succeed by creating brand identities."
-        },
-        "gallery": {
-            "imageOne": "images/portfolio/portfolio-01.jpg",
-            "imageTwo": "images/portfolio/portfolio-02.jpg",
-            "imageThree": "images/portfolio/portfolio-03.jpg"
-        }
+    "id": 1,
+    "title": "기아,고아 등록신고",
+    "date": "행정 민원",
+    "client": "본인이 등록",
+    "month":"빠른 심사",
+    
+    "subtitle": "상세 내용",
+    "body": ["<p>상황에 따라 심사기간이 변동될 수 있습니다</p><br/><p>※ 개인의 신분과 관련된 민원으로서 행정당국은 대리 및 대행을 매우 엄격하게 제한하고 있습니다. 당사무소는 각종 신고서, 신청서 작성만 대행하며 민원서류 제출은 고객이 직접 해야 합니다.</p>"],
+
+    "subContent": {
+        "title": "기아",
+        "subtext": ["<p>기아란 부모를 모두 알 수 없는 어린아이(幼兒)를 말합니다.</p>"]
+    },
+    "subContent2": {
+        "title": "기아 가족관계등록부 직권 창설",
+        "subtext": ["<p>기아를 발견한 경우 시읍면장은 가정법원의 허가를 받아 성본을 만들고 이름과 등록기준지를 직접 정해 가족관계등록부를 작성해야 합니다.</p>"]
+    },
+    "subContent3": {
+        "title": "기아 출생신고",
+        "subtext": ["<p>아버지나 어머니를 찾은 경우 1개월 내에 출생신고를 해야 합니다.</p><p>만일 출생신고의 내용과 기존에 창설된 가족관계등록부가 다른 점이 있을 경우 시읍면장에 가족관계등록부의 정정을 신청해야 합니다.</p><p>아버지나 어머니의 성본을 따를 경우에도 등록부를 정정해야 합니다.</p>"]
+    },"subContent4": {
+        "title": "고아",
+        "subtext": ["<p>고아란 부모를 모두 알 수 없는 자를 말하며, 기아를 제외합니다.</p>"]
+    },
+    "subContent5": {
+        "title": "고아 가족관계등록부 창설신고",
+        "subtext": ["<p>가족관계등록부가 없는 경우 본인 또는 법정대리인(후견인)이 가정법원의 허가를 받아 성본을 만든 후에 → 다시 가정법원의 허가를 받아 1개월 내에 가족관계등록부 창설신고를 해야 합니다.</p>"]
+    },
+    "subContent6": {
+        "title": "고아 가족관계등록부 정정",
+        "subtext": ["<p>아버지나 어머니를 찾은 경우 가정법원의 허가를 받아 가족관계등록부를 정정해야 합니다. 아버지나 어머니의 성본을 따를 경우에도 등록부를 정정해야 합니다.</p>"]
     }
+}
 
 const Orphanregistration = () => {
     return (
         <>
             <SEO title="Portfolio Three Column || Doob - React Business  Template" />
             <Layout>
-                <BreadcrumbOne 
-                    title="Orphanregistration <br /> Quick Copy & Make site."
-                    rootUrl="/"
-                    parentUrl="Home"
-                    currentUrl="Portfolio Three Column"
-                />
                 <div className="rwt-portfolio-details rn-section-gap">
                     <div className="container">
                         <div className="row">
@@ -58,53 +50,56 @@ const Orphanregistration = () => {
                                 <div className="inner">
                                     <div className="details-list">
                                         <div className="thumbnail alignwide">
-                                            <img className="radius w-100" src={`${process.env.PUBLIC_URL}/${Data.largeImage}`} alt="Corporate Image" />
                                         </div>
                                         <div className="row mt--40 row--30">
-                                            <div className="col-lg-6">
+                                            <div className="col-lg-12">
                                                 <div className="content-left">
-                                                    <h4 className="title">{Data.title}</h4>
+                                                    <h4 className="title">{data.title}</h4>
                                                     <div className="single-list-wrapper">
                                                         <div className="single-list">
-                                                            <label>Date:</label>
-                                                            <span>{Data.date}</span>
+                                                            <label>분류:</label>
+                                                            <span>{data.date}</span>
                                                         </div>
                                                         <div className="single-list">
-                                                            <label>Client:</label>
-                                                            <span>{Data.client}</span>
+                                                            <label>요약:</label>
+                                                            <span>{data.client}</span>
                                                         </div>
                                                         <div className="single-list">
-                                                            <label>Category:</label>
-                                                            <span>{Data.category}</span>
+                                                            <label>심사 기간:</label>
+                                                            <span>{data.month}</span>
                                                         </div>
+                                                    </div>
+                                                </div>
+                                                <div className="col mt--120">
+                                                    <h3 className="subtitle">{data.subtitle}</h3>
+                                                    <div className="description" dangerouslySetInnerHTML={{__html: data.body}}></div>
+                                                    
+                                                    <div className="view-btn mt--50">
+                                                        <h4 className="subtitle">{data.subContent.title}</h4>
+                                                        <div className="description" dangerouslySetInnerHTML={{__html: data.subContent.subtext}}></div>
                                                     </div>
                                                     <div className="view-btn mt--50">
-                                                        <a className="btn-default btn-large round" href="/">{Data.btn.buttontext}</a>
+                                                        <h5 className="subtitle">{data.subContent2.title}</h5>
+                                                        <div className="description" dangerouslySetInnerHTML={{__html: data.subContent2.subtext}}></div>
                                                     </div>
+                                                    <div className="view-btn mt--50">
+                                                        <h5 className="subtitle">{data.subContent3.title}</h5>
+                                                        <div className="description" dangerouslySetInnerHTML={{__html: data.subContent3.subtext}}></div>
+                                                    </div>
+                                                    <div className="view-btn mt--50">
+                                                        <h4 className="subtitle">{data.subContent4.title}</h4>
+                                                        <div className="description" dangerouslySetInnerHTML={{__html: data.subContent4.subtext}}></div>
+                                                    </div>
+                                                    <div className="view-btn mt--50">
+                                                        <h5 className="subtitle">{data.subContent5.title}</h5>
+                                                        <div className="description" dangerouslySetInnerHTML={{__html: data.subContent5.subtext}}></div>
+                                                    </div>
+                                                    <div className="view-btn mt--50">
+                                                        <h5 className="subtitle">{data.subContent6.title}</h5>
+                                                        <div className="description" dangerouslySetInnerHTML={{__html: data.subContent6.subtext}}></div>
+                                                    </div>
+
                                                 </div>
-                                            </div>
-                                            <div className="col-lg-6 mt_md--30 mt_sm--30">
-                                                <div className="content-right">
-                                                    <h5 className="subtitle">{Data.subtitle}</h5>
-                                                    <div className="description" dangerouslySetInnerHTML={{__html: Data.body}}></div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div className="portfolio-gallery mt--40">
-                                        <div className="gallery mt--30">
-                                            <div className="thumbnail">
-                                                <img className="radius w-100" src={`${process.env.PUBLIC_URL}/${Data.gallery.imageOne}`} alt="Corporate Image" />
-                                            </div>
-                                        </div>
-                                        <div className="gallery mt--30">
-                                            <div className="thumbnail">
-                                                <img className="radius w-100" src={`${process.env.PUBLIC_URL}/${Data.gallery.imageTwo}`} alt="Corporate Image" />
-                                            </div>
-                                        </div>
-                                        <div className="gallery mt--30">
-                                            <div className="thumbnail">
-                                                <img className="radius w-100" src={`${process.env.PUBLIC_URL}/${Data.gallery.imageThree}`} alt="Corporate Image" />
                                             </div>
                                         </div>
                                     </div>

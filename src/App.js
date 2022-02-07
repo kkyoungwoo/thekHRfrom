@@ -82,11 +82,9 @@ import D2 from "./pages/studying/D2";
 import D4 from "./pages/studying/D4";
 
 import Residentregistration from "./pages/registration/Residentregistration";
-import Familyrelationship from "./pages/registration/Familyrelationship";
 import Myselfregistration from "./pages/registration/Myselfregistration";
 import Parentalregistration from "./pages/registration/Parentalregistration";
 import Descendantregistration from "./pages/registration/Descendantregistration";
-import Guardiansregistration from "./pages/registration/Guardiansregistration";
 import Orphanregistration from "./pages/registration/Orphanregistration";
 import Onotherregistration from "./pages/registration/Onotherregistration";
 
@@ -135,11 +133,9 @@ const App = () => {
                     <Route path={`${process.env.PUBLIC_URL + "/d4"}`} exact component={D4}/>
                     {/**행정 민원 */}
                     <Route path={`${process.env.PUBLIC_URL + "/residentregistration"}`} exact component={Residentregistration}/>
-                    <Route path={`${process.env.PUBLIC_URL + "/familyrelationship"}`} exact component={Familyrelationship}/>
                     <Route path={`${process.env.PUBLIC_URL + "/myselfregistration"}`} exact component={Myselfregistration}/>
                     <Route path={`${process.env.PUBLIC_URL + "/parentalregistration"}`} exact component={Parentalregistration}/>
-                    <Route path={`${process.env.PUBLIC_URL + "/descendantregistration"}`} exact component={Descendantregistration}/>                    
-                    <Route path={`${process.env.PUBLIC_URL + "/guardiansregistration"}`} exact component={Guardiansregistration}/>
+                    <Route path={`${process.env.PUBLIC_URL + "/descendantregistration"}`} exact component={Descendantregistration}/>
                     <Route path={`${process.env.PUBLIC_URL + "/orphanregistration"}`} exact component={Orphanregistration}/>                    
                     <Route path={`${process.env.PUBLIC_URL + "/onotherregistration"}`} exact component={Onotherregistration}/>
                     {/**사범 */}

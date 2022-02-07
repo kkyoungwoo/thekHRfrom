@@ -135,36 +135,26 @@
             },
             {
                 "id": 2,
-                "text": "가족관계 등록",
-                "url": "/familyrelationship"
-            },
-            {
-                "id": 3,
                 "text": "본인 등록신고",
                 "url": "/myselfregistration"
             },
             {
-                "id": 4,
+                "id": 3,
                 "text": "친권 등록신고",
                 "url": "/parentalregistration"
             },
             {
-                "id": 5,
+                "id": 4,
                 "text": "자녀 등록신고",
                 "url": "/descendantregistration"
             },
             {
-                "id": 6,
-                "text": "후견인 등록신고",
-                "url": "/guardiansregistration"
-            },
-            {
-                "id": 7,
+                "id": 5,
                 "text": "기아,고아 등록신고",
                 "url": "/orphanregistration"
             },
             {
-                "id": 8,
+                "id": 6,
                 "text": "기타 절차 안내",
                 "url": "/onotherregistration"
             }

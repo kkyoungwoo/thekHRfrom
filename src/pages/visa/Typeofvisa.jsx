@@ -1,7 +1,6 @@
 import React from 'react';
 import SEO from "../../common/SEO";
 import Layout from "../../common/Layout";
-import BreadcrumbOne from "../../elements/breadcrumb/BreadcrumbOne";
 import SectionTitle from "../../elements/sectionTitle/SectionTitle";
 import PortfolioOne from "../../elements/portfolio/PortfolioOne";
 
@@ -10,12 +9,6 @@ const Typeofvisa = () => {
         <>
             <SEO title="Portfolio Three Column || Doob - React Business  Template" />
             <Layout>
-                <BreadcrumbOne 
-                    title="The Easiest Way To Create Website <br /> Quick Copy & Make site."
-                    rootUrl="/"
-                    parentUrl="Home"
-                    currentUrl="Portfolio Three Column"
-                />
                 <div className="main-content">
                     <div className="rwt-portfolio-area rn-section-gap">
                         <div className="container">

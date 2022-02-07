@@ -47,11 +47,9 @@ const Nav = () => {
             <li className="has-droupdown"><Link to="#">행정 민원</Link>
                 <ul className="submenu">
                     <li><Link to="/residentregistration">주민등록</Link></li>
-                    <li><Link to="/familyrelationship">가족관계 등록</Link></li>
                     <li><Link to="/myselfregistration">본인 등록신고</Link></li>
                     <li><Link to="/parentalregistration">친권 등록신고</Link></li>
                     <li><Link to="/descendantregistration">자녀 등록신고</Link></li>
-                    <li><Link to="/guardiansregistration">후견인 등록신고</Link></li>
                     <li><Link to="/orphanregistration">기아,고아 등록신고</Link></li>
                     <li><Link to="/onotherregistration">기타 절차 안내</Link></li>
                 </ul>
