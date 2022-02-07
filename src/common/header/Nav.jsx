@@ -4,7 +4,8 @@ import {Link} from "react-router-dom";
 const Nav = () => {
     return (
         <ul className="mainmenu">
-            <li><Link to="/typeofvisa">비자 안내</Link></li>
+            <li><Link to="/introduction">About us</Link></li>
+            <li><Link to="/typeofvisa">비자</Link></li>
             {/*
             <li className="has-droupdown"><Link to="#">비자 안내</Link>
                 {<ul className="submenu">
@@ -20,8 +21,26 @@ const Nav = () => {
 
             <li className="has-droupdown"><Link to="#">유학</Link>
                 <ul className="submenu">
+                    <li><Link to="/entrance">입학문의</Link></li>
                     <li><Link to="/d2">D-2</Link></li>
                     <li><Link to="/d4">D-4</Link></li>
+                </ul>
+            </li>
+
+            <li className="has-droupdown"><Link to="#">출입국 사범</Link>
+                <ul className="submenu">
+                    <li><Link to="/immigrationlitigation">출입국 사범 문의</Link></li>
+                    <li><Link to="/illegalitylitigation">불법체류자 구제</Link></li>
+                    <li><Link to="/protectionlitigation">보호일시 해제</Link></li>
+                </ul>
+            </li>
+
+            <li className="has-droupdown"><Link to="#">소송</Link>
+                <ul className="submenu">
+                    <li><Link to="/criminallitigation">형사 사건</Link></li>
+                    <li><Link to="/civillitigation">민사 사건</Link></li>
+                    <li><Link to="/familylitigation">가사 사건</Link></li>
+                    <li><Link to="/administrativelitigation">행정 사건</Link></li>
                 </ul>
             </li>
 
@@ -38,26 +57,13 @@ const Nav = () => {
                 </ul>
             </li>
 
-            <li className="has-droupdown"><Link to="#">사범 소송</Link>
-                <ul className="submenu">
-                    <li><Link to="/illegalitylitigation">불법체류자 구제</Link></li>
-                    <li><Link to="/protectionlitigation">보호일시 해제</Link></li>
-                    <li><Link to="/criminallitigation">형사 사건</Link></li>
-                    <li><Link to="/civillitigation">민사 사건</Link></li>
-                    <li><Link to="/administrativelitigation">행정 사건</Link></li>
-                    <li><Link to="/familylitigation">가사 사건</Link></li>
-                </ul>
-            </li>
-
             <li className="has-droupdown"><Link to="#">고객센터</Link>
                 <ul className="submenu">
                     <li><Link to="/visainquiry">비자 문의</Link></li>
                     <li><Link to="/workinquiry">일자리 문의</Link></li>
                     <li><Link to="/agencyinquiry">위임 / 대행</Link></li>
                     <li><Link to="/Price">요금</Link></li>
-                    <li><Link to="/paidinquiry">유료 상담</Link></li>
-                    <li><Link to="/purchasedata">자료 구매</Link></li>
-                    <li><Link to="/introduction">회사소개</Link></li>
+                    <li><Link to="/paidinquiry">상담</Link></li>
                 </ul>
             </li>
         </ul>

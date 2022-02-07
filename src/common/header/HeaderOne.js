@@ -26,6 +26,7 @@ const HeaderOne = ({btnStyle, HeaderSTyle}) => {
         <>
             <header ref={ref} className={`rn-header header-default ${HeaderSTyle} ${headerClasses}`}>
                 <div className="container position-relative">
+                    <div id="google_translate_element"></div>
                     <div className="row align-items-center row--0">
                         <div className="col-lg-3 col-md-6 col-4">
                             <Logo 
@@ -38,7 +39,6 @@ const HeaderOne = ({btnStyle, HeaderSTyle}) => {
                                 <nav className="mainmenu-nav d-none d-lg-block">
                                     <Nav />
                                 </nav>
-                                <div id="google_translate_element"></div>
                                 <div className="mobile-menu-bar ml--5 d-block d-lg-none">
                                     <div className="hamberger">
                                         <span className="hamberger-button" onClick={onCanvasHandler}><FiMenu /></span>

@@ -68,6 +68,8 @@ import BlogDetails from "./pages/BlogDetails";
 
 import Error from "./pages/Error";
 
+import Introduction from "./pages/aboutus/Introduction";
+
 import typeofvisa from "./pages/visa/Typeofvisa";
 import employmentvisa from "./pages/visa/Employmentvisa";
 import investmentvisa from "./pages/visa/Investmentvisa";
@@ -75,6 +77,7 @@ import residencevisa from "./pages/visa/Residencevisa";
 import marriagevisa from "./pages/visa/Marriagevisa";
 import overseaskoreansvisa from "./pages/visa/Overseaskoreansvisa";
 
+import Entrance from "./pages/studying/Entrance";
 import D2 from "./pages/studying/D2";
 import D4 from "./pages/studying/D4";
 
@@ -87,7 +90,7 @@ import Guardiansregistration from "./pages/registration/Guardiansregistration";
 import Orphanregistration from "./pages/registration/Orphanregistration";
 import Onotherregistration from "./pages/registration/Onotherregistration";
 
-
+import Immigrationlitigation from "./pages/litigation/Immigrationlitigation";
 import Illegalitylitigation from "./pages/litigation/Illegalitylitigation";
 import Protectionlitigation from "./pages/litigation/Protectionlitigation";
 import Criminallitigation from "./pages/litigation/Criminallitigation";
@@ -101,7 +104,6 @@ import Agencyinquiry from "./pages/inquiry/Agencyinquiry";
 import Price from "./pages/inquiry/Price";
 import Paidinquiry from "./pages/inquiry/Paidinquiry";
 import Purchasedata from "./pages/inquiry/Purchasedata";
-import Introduction from "./pages/inquiry/Introduction";
 
 
 // Import Css Here 
@@ -114,19 +116,24 @@ const App = () => {
         <Router>
             <PageScrollTop>
                 <Switch>
-                    {/* */}
+                    {/**메인페이지 */}
                     <Route path={`${process.env.PUBLIC_URL + "/"}`} exact component={Consulting}/>
-                    
+
+                    {/**회사 소개 */}            
+                    <Route path={`${process.env.PUBLIC_URL + "/introduction"}`} exact component={Introduction}/>
+                    {/**비자 안내 */}
                     <Route path={`${process.env.PUBLIC_URL + "/typeofvisa"}`} exact component={typeofvisa}/>
+                    {/**미사용 페이지 */}
                     <Route path={`${process.env.PUBLIC_URL + "/employmentvisa"}`} exact component={employmentvisa}/>
                     <Route path={`${process.env.PUBLIC_URL + "/investmentvisa"}`} exact component={investmentvisa}/>
                     <Route path={`${process.env.PUBLIC_URL + "/residencevisa"}`} exact component={residencevisa}/>
                     <Route path={`${process.env.PUBLIC_URL + "/marriagevisa"}`} exact component={marriagevisa}/>                    
                     <Route path={`${process.env.PUBLIC_URL + "/overseaskoreansvisa"}`} exact component={overseaskoreansvisa}/>
-
+                    {/**유학 */}
+                    <Route path={`${process.env.PUBLIC_URL + "/entrance"}`} exact component={Entrance}/>
                     <Route path={`${process.env.PUBLIC_URL + "/d2"}`} exact component={D2}/>
                     <Route path={`${process.env.PUBLIC_URL + "/d4"}`} exact component={D4}/>
-                    
+                    {/**행정 민원 */}
                     <Route path={`${process.env.PUBLIC_URL + "/residentregistration"}`} exact component={Residentregistration}/>
                     <Route path={`${process.env.PUBLIC_URL + "/familyrelationship"}`} exact component={Familyrelationship}/>
                     <Route path={`${process.env.PUBLIC_URL + "/myselfregistration"}`} exact component={Myselfregistration}/>
@@ -135,21 +142,21 @@ const App = () => {
                     <Route path={`${process.env.PUBLIC_URL + "/guardiansregistration"}`} exact component={Guardiansregistration}/>
                     <Route path={`${process.env.PUBLIC_URL + "/orphanregistration"}`} exact component={Orphanregistration}/>                    
                     <Route path={`${process.env.PUBLIC_URL + "/onotherregistration"}`} exact component={Onotherregistration}/>
-
+                    {/**사범 */}
+                    <Route path={`${process.env.PUBLIC_URL + "/immigrationlitigation"}`} exact component={Immigrationlitigation}/>
                     <Route path={`${process.env.PUBLIC_URL + "/illegalitylitigation"}`} exact component={Illegalitylitigation}/>
                     <Route path={`${process.env.PUBLIC_URL + "/protectionlitigation"}`} exact component={Protectionlitigation}/>                    
+                    {/**소송 */}
                     <Route path={`${process.env.PUBLIC_URL + "/criminallitigation"}`} exact component={Criminallitigation}/>
                     <Route path={`${process.env.PUBLIC_URL + "/civillitigation"}`} exact component={Civillitigation}/>                    
-                    <Route path={`${process.env.PUBLIC_URL + "/administrativelitigation"}`} exact component={Administrativelitigation}/>
                     <Route path={`${process.env.PUBLIC_URL + "/familylitigation"}`} exact component={Familylitigation}/>
-
+                    <Route path={`${process.env.PUBLIC_URL + "/administrativelitigation"}`} exact component={Administrativelitigation}/>
+                    {/**고객센터 */}
                     <Route path={`${process.env.PUBLIC_URL + "/visainquiry"}`} exact component={Visainquiry}/>
                     <Route path={`${process.env.PUBLIC_URL + "/workinquiry"}`} exact component={Workinquiry}/>                    
                     <Route path={`${process.env.PUBLIC_URL + "/agencyinquiry"}`} exact component={Agencyinquiry}/>
                     <Route path={`${process.env.PUBLIC_URL + "/Price"}`} exact component={Price}/>                    
                     <Route path={`${process.env.PUBLIC_URL + "/paidinquiry"}`} exact component={Paidinquiry}/>
-                    <Route path={`${process.env.PUBLIC_URL + "/purchasedata"}`} exact component={Purchasedata}/>
-                    <Route path={`${process.env.PUBLIC_URL + "/introduction"}`} exact component={Introduction}/>
 
 
 
