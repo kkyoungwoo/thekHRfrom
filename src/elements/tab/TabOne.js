@@ -25,11 +25,6 @@ const TabOne = () => {
                                                         <button>Reporting</button>
                                                     </div>   
                                                 </Tab>
-                                                <Tab>
-                                                    <div className="rn-tab-button">
-                                                        <button>Development</button>
-                                                    </div>   
-                                                </Tab>
                                             </TabList>
                                         </div>
 

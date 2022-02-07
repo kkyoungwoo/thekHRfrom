@@ -92,51 +92,9 @@ const Introduction = () => {
                     </div>
 
                     <Separator />
+                    
                     <AboutThree />
 
-                    <Separator />
-                    {/* Start Elements Area  */}
-                    <div className="rwt-pricing-area rn-section-gap">
-                        <div className="container">
-                            <div className="row mb--35">
-                                <div className="col-lg-12">
-                                    <SectionTitle
-                                        textAlign = "text-center"
-                                        radiusRounded = ""
-                                        subtitle = "Our Pricing Plan"
-                                        title = "Business Pricing Plan."
-                                        description = "We help our clients succeed by creating brand identities, <br /> digital experiences, and print materials."
-                                    />
-                                </div>
-                            </div>
-                            <PricingThree />
-                        </div>
-                    </div>
-                    {/* End Elements Area  */}
-
-                    <Separator />
-                    <div className="blog-area rn-section-gap">
-                        <div className="container">
-                            <div className="row">
-                                <div className="col-lg-12">
-                                    <SectionTitle
-                                        textAlign = "text-center"
-                                        radiusRounded = ""
-                                        subtitle = "Latests News"
-                                        title = "Our Latest News."
-                                        description = "We provide company and finance service for <br /> startups and company business."
-                                    />
-                                </div>
-                            </div>
-                            <div className="row row--15">
-                                {BlogListData.map((item) => (
-                                    <div key={item.id} className="col-lg-4 col-md-6 col-12 mt--30">
-                                        <BlogList StyleVar="box-card-style-default" data={item} />
-                                    </div>
-                                ))}
-                            </div>
-                        </div>
-                    </div> 
                     <FooterThree />
                 </main>
             </Layout>

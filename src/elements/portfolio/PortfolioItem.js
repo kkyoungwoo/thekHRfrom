@@ -3,12 +3,15 @@ import {Link} from "react-router-dom";
 
 const PortfolioItem = ({ portfolio }) => {
     return (
-        <div className="rwt-card">
+        <div className="rwt-card" style={{
+            display:"flex",
+            justifyContent:"center",
+            alignItems:"center"
+        }}>
             <div className="inner">
                 <div className="thumbnail">
                     <figure className="card-image">
                         <Link to={process.env.PUBLIC_URL + `/employmentvisa/${portfolio.id}`}>
-                            <img className="img-fluid" src={portfolio.portfolioImage} alt="Portfolio-01"/>
                         </Link>
                     </figure>
                     <Link to={process.env.PUBLIC_URL + `/employmentvisa/${portfolio.id}`} className="rwt-overlay"></Link>
@@ -19,7 +22,6 @@ const PortfolioItem = ({ portfolio }) => {
                             {portfolio.title}
                         </Link>
                     </h5>
-                    <span className="subtitle b2 text-capitalize">{portfolio.date}</span>
                 </div>
             </div>
         </div>
