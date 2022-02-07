@@ -30,7 +30,7 @@ const Typeofvisa = () => {
                                         />
                                 </div>
                             </div>
-                            <PortfolioOne Column="col-lg-4 col-md-6 mt--30 portfolio"  />
+                            <PortfolioOne  Column="col-lg-4 col-md-6 mt--30 box-grid-layout no-overlay" />
                         </div>
                     </div>
                 </div>

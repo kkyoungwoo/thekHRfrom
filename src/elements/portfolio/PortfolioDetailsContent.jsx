@@ -141,11 +141,11 @@ const PortfolioDetailsContent = ({ data }) => {
                                                 />
                                         </div>
                                     </div>
-                                    <div Column="col-lg-4 col-md-6 mt--30 portfolio">
+                                    <div Column="col-lg-4 col-md-6 mt--30 portfolio " >
                                         <div className="col-lg-12">
                                             <ul className="rwt-portfolio-filter filter-button-default liststyle mb--20">
                                                 {filters.map((filter) => (
-                                                <li className="list-item" key={filter.id}>
+                                                <li className="list-item" key={filter.id} >
                                                     <button
                                                     onClick={handleChange}
                                                     className={
@@ -166,7 +166,7 @@ const PortfolioDetailsContent = ({ data }) => {
 
                                     <div className="row row--15">
                                         {visibleItems.map((item) => (
-                                            <div key={item.id} className="col-lg-4 col-md-6 mt--30 portfolio">
+                                            <div key={item.id} className="col-lg-4 col-md-6 mt--30 portfolio box-grid-layout no-overlay"  >
                                                 <PortfolioItem portfolio={item} />
                                             </div>
                                         ))}
