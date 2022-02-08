@@ -83,8 +83,8 @@ const PortfolioDetailsContent = ({ data }) => {
                             <div className="details-list">
                                 <div className="thumbnail alignwide">
                                 </div>
-                                <div className="row mt--40 row--30">
-                                    <div className="col-lg-6">
+                                <div className="row mt--40 row--30" >
+                                    <div className="col-lg-12">
                                         <div className="content-left">
                                             <h4 className="title">{data.title}</h4>
                                             <div className="single-list-wrapper">
@@ -102,16 +102,18 @@ const PortfolioDetailsContent = ({ data }) => {
                                                 </div>
                                             </div>
                                             <div className="view-btn mt--50">
-                                                <h5 className="subtitle">{data.subContent.title}</h5>
-                                                <div className="description" dangerouslySetInnerHTML={{__html: data.subContent.subtext}}></div>
-                                            </div>
-                                            <div className="view-btn mt--50">
-                                                <h5 className="subtitle">{data.subContent2.title}</h5>
-                                                <div className="description" dangerouslySetInnerHTML={{__html: data.subContent2.subtext}}></div>
-                                            </div>
-                                            <div className="view-btn mt--50">
-                                                <h5 className="subtitle">{data.subContent3.title}</h5>
-                                                <div className="description" dangerouslySetInnerHTML={{__html: data.subContent3.subtext}}></div>
+                                                <div className="col mt--120">
+                                                    <h5 className="subtitle">{data.subContent.title}</h5>
+                                                    <div className="description" dangerouslySetInnerHTML={{__html: data.subContent.subtext}}></div>
+                                                </div>
+                                                <div className="view-btn mt--50">
+                                                    <h5 className="subtitle">{data.subContent2.title}</h5>
+                                                    <div className="description" dangerouslySetInnerHTML={{__html: data.subContent2.subtext}}></div>
+                                                </div>
+                                                <div className="view-btn mt--50">
+                                                    <h5 className="subtitle">{data.subContent3.title}</h5>
+                                                    <div className="description" dangerouslySetInnerHTML={{__html: data.subContent3.subtext}}></div>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
