@@ -44,9 +44,6 @@ const filters = [
 ];
 
 
-const alldata = filters;
-
-
 const data = 
 {
     "id": 1,
@@ -92,11 +89,13 @@ const Myselfregistration = () => {
 
     let history = useHistory();
 
-    const [activeFilter, setActiveFilter] = useState();
+    const [activeFilter, setActiveFilter] = useState("myselfregistration");
+    const activeFilterColor = "/myselfregistration";
     
     const handleChange = (e) => {
-        setActiveFilter(e.target.className);
+        setActiveFilter(e.target.id);
     }
+    
     useEffect(()=>{
         history.push(activeFilter)
     },[activeFilter])
@@ -114,7 +113,12 @@ const Myselfregistration = () => {
                                 <li className="list-item" key={filter.id} >
                                     <button
                                     onClick={handleChange}
-                                    className={filter.siteaddress}
+                                    className={
+                                        filter.siteaddress === activeFilterColor
+                                        ? "current"
+                                        : " "
+                                    }
+                                    id={filter.siteaddress}
                                     >
                                     <div className="none_pointer">
                                         {filter.texter}

@@ -1,7 +1,30 @@
-import React from 'react';
+import { useState,useCallback } from 'react';
 import {Link} from "react-router-dom";
 
 const Nav = () => {
+
+    const [plusA,setPlusA] = useState("+");
+    const [plusB,setPlusB] = useState("+");
+    const [plusC,setPlusC] = useState("+");
+    const [plusD,setPlusD] = useState("+");
+    const [plusE,setPlusE] = useState("+");
+
+    const plusHandlerA = useCallback(()=>{
+        plusA === "+" ? setPlusA("-") : setPlusA("+")
+    },[plusA])
+    const plusHandlerB = useCallback(()=>{
+        plusB === "+" ? setPlusB("-") : setPlusB("+")
+    },[plusB])
+    const plusHandlerC = useCallback(()=>{
+        plusC === "+" ? setPlusC("-") : setPlusC("+")
+    },[plusC])
+    const plusHandlerD = useCallback(()=>{
+        plusD === "+" ? setPlusD("-") : setPlusD("+")
+    },[plusD])
+    const plusHandlerE = useCallback(()=>{
+        plusE === "+" ? setPlusE("-") : setPlusE("+")
+    },[plusE])
+
     return (
         <ul className="mainmenu">
             <li><Link to="/introduction">About us</Link></li>
@@ -19,7 +42,7 @@ const Nav = () => {
             </li>
              */}
 
-            <li className="has-droupdown"><Link to="#">유학</Link>
+            <li className="has-droupdown" onClick={plusHandlerA}><Link to="#">유학<span className='mobile_header'> {plusA} </span></Link>
                 <ul className="submenu">
                     <li><Link to="/entrance">입학문의</Link></li>
                     <li><Link to="/d2">D-2</Link></li>
@@ -27,7 +50,7 @@ const Nav = () => {
                 </ul>
             </li>
 
-            <li className="has-droupdown"><Link to="#">출입국 사범</Link>
+            <li className="has-droupdown" onClick={plusHandlerB}><Link to="#">출입국 사범<span className='mobile_header'> {plusB} </span></Link>
                 <ul className="submenu">
                     <li><Link to="/immigrationlitigation">출입국 사범 문의</Link></li>
                     <li><Link to="/illegalitylitigation">불법체류자 구제</Link></li>
@@ -35,7 +58,7 @@ const Nav = () => {
                 </ul>
             </li>
 
-            <li className="has-droupdown"><Link to="#">소송</Link>
+            <li className="has-droupdown" onClick={plusHandlerC}><Link to="#">소송<span className='mobile_header'> {plusC} </span></Link>
                 <ul className="submenu">
                     <li><Link to="/criminallitigation">형사 사건</Link></li>
                     <li><Link to="/civillitigation">민사 사건</Link></li>
@@ -44,7 +67,7 @@ const Nav = () => {
                 </ul>
             </li>
 
-            <li className="has-droupdown"><Link to="#">행정 민원</Link>
+            <li className="has-droupdown" onClick={plusHandlerD}><Link to="#">행정 민원<span className='mobile_header'> {plusD} </span></Link>
                 <ul className="submenu">
                     <li><Link to="/residentregistration">주민등록</Link></li>
                     <li><Link to="/myselfregistration">본인 등록신고</Link></li>
@@ -55,7 +78,7 @@ const Nav = () => {
                 </ul>
             </li>
 
-            <li className="has-droupdown"><Link to="#">고객센터</Link>
+            <li className="has-droupdown" onClick={plusHandlerE}><Link to="#">고객센터<span className='mobile_header'> + </span></Link>
                 <ul className="submenu">
                     <li><Link to="/visainquiry">비자 문의</Link></li>
                     <li><Link to="/workinquiry">일자리 문의</Link></li>

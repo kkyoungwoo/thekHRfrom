@@ -88,9 +88,10 @@ import Descendantregistration from "./pages/registration/Descendantregistration"
 import Orphanregistration from "./pages/registration/Orphanregistration";
 import Onotherregistration from "./pages/registration/Onotherregistration";
 
-import Immigrationlitigation from "./pages/litigation/Immigrationlitigation";
-import Illegalitylitigation from "./pages/litigation/Illegalitylitigation";
-import Protectionlitigation from "./pages/litigation/Protectionlitigation";
+import Illegalitylitigation from "./pages/immigration/Illegalitylitigation";
+import Immigrationlitigation from "./pages/immigration/Immigrationlitigation";
+import Protectionlitigation from "./pages/immigration/Protectionlitigation";
+
 import Criminallitigation from "./pages/litigation/Criminallitigation";
 import Civillitigation from "./pages/litigation/Civillitigation";
 import Administrativelitigation from "./pages/litigation/Administrativelitigation";

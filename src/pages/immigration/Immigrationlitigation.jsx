@@ -1,7 +1,29 @@
-import React from 'react';
+import React, { useState, useEffect } from "react";
 import SEO from "../../common/SEO";
 import Layout from "../../common/Layout";
 import BreadcrumbOne from "../../elements/breadcrumb/BreadcrumbOne";
+import { useHistory } from 'react-router-dom'
+
+const filters = [
+    {
+      id: 1,
+      text: "1",
+      texter: "출입국 사범 문의",
+      siteaddress:"/illegalitylitigation"
+    },
+    {
+      id: 2,
+      text: "2",
+      texter: "불법체류자 구제",
+      siteaddress:"/immigrationlitigation"
+    },
+    {
+      id: 3,
+      text: "3",
+      texter: "보호일시 해제",
+      siteaddress:"/protectionlitigation"
+    }
+];
 
 const Data = 
 {
@@ -10,7 +32,7 @@ const Data =
         "image": "images/portfolio/portfolio-05.jpg",
         "title": "React Development",
         "subtitle": "Awesome portfolio",
-        "date": "01 March 2021",
+        "date": "01 March SS2021",
         "client": "Rainbow Themes",
         "category": "design",
         "awards": ["2020 Design beautiful apps Finale Awards"],
@@ -40,18 +62,60 @@ const Data =
         }
     }
 
-const Protectionlitigation = () => {
+const Immigrationlitigation = () => {
+
+    
+    let history = useHistory();
+
+    const [activeFilter, setActiveFilter] = useState("immigrationlitigation");
+    const activeFilterColor = "/immigrationlitigation";
+    
+    const handleChange = (e) => {
+        setActiveFilter(e.target.id);
+    }
+    
+    useEffect(()=>{
+        history.push(activeFilter)
+    },[activeFilter])
+
+
+
     return (
         <>
             <SEO title="Portfolio Three Column || Doob - React Business  Template" />
             <Layout>
-                <BreadcrumbOne 
-                    title="Protectionlitigation <br /> Quick Copy & Make site."
-                    rootUrl="/"
-                    parentUrl="Home"
-                    currentUrl="Portfolio Three Column"
-                />
                 <div className="rwt-portfolio-details rn-section-gap">
+                    {/**cards start */}
+                    <div Column="col-lg-4 col-md-6 mt--30 portfolio " >
+                        <div className="col-lg-12">
+                            <ul className="rwt-portfolio-filter filter-button-default liststyle mb--20">
+                                {filters.map((filter) => (
+                                <li className="list-item" key={filter.id} >
+                                    <button
+                                    onClick={handleChange}
+                                    className={
+                                        filter.siteaddress === activeFilterColor
+                                        ? "current"
+                                        : " "
+                                    }
+                                    id={filter.siteaddress}
+                                    >
+                                    <div className="none_pointer">
+                                        {filter.texter}
+                                    </div>
+                                    </button>
+                                </li>
+                                ))}
+                            </ul>
+                        </div>
+                    </div>
+                    {/**cards end */}
+                    <BreadcrumbOne 
+                        title="Familylitigation <br /> Quick Copy & Make site."
+                        rootUrl="/"
+                        parentUrl="Home"
+                        currentUrl="Portfolio Three Column"
+                    />
                     <div className="container">
                         <div className="row">
                             <div className="col-lg-10 offset-lg-1">
@@ -117,4 +181,4 @@ const Protectionlitigation = () => {
         </>
     )
 }
-export default Protectionlitigation;
+export default Immigrationlitigation;

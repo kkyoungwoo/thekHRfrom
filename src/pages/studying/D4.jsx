@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState, useEffect } from "react";
 import SEO from "../../common/SEO";
 import Layout from "../../common/Layout";
 import ScrollAnimation from "react-animate-on-scroll";
@@ -6,6 +6,30 @@ import ScrollAnimation from "react-animate-on-scroll";
 import SectionTitle from "../../elements/sectionTitle/SectionTitle";
 import ServiceOne from "../../elements/service/ServiceOne";
 import { FiArrowRight } from "react-icons/fi";
+
+import { useHistory } from 'react-router-dom'
+
+const filters = [
+    {
+      id: 1,
+      text: "1",
+      texter: "입학문의",
+      siteaddress:"/entrance"
+    },
+    {
+      id: 2,
+      text: "2",
+      texter: "D-2",
+      siteaddress:"/d2"
+    },
+    {
+      id: 3,
+      text: "3",
+      texter: "D-4",
+      siteaddress:"/d4"
+    }
+];
+
 
 const callToActionData = {
     title: "유학생활 준비가 되셨나요?",
@@ -51,12 +75,51 @@ const TimelineData = [
 ]
 
 const D4 = () => {
+
+    let history = useHistory();
+
+    const [activeFilter, setActiveFilter] = useState("d4");
+    const activeFilterColor = "/d4";
+    
+    const handleChange = (e) => {
+        setActiveFilter(e.target.id);
+    }
+    
+    useEffect(()=>{
+        history.push(activeFilter)
+    },[activeFilter])
+
     return (
         <>
             <SEO title="Portfolio Three Column || Doob - React Business  Template" />
             <Layout>
                 <div className="main-content">
                     <div className="rwt-portfolio-area rn-section-gap">
+                        {/**cards start */}
+                            <div Column="col-lg-4 col-md-6 mt--30 portfolio " >
+                                <div className="col-lg-12">
+                                    <ul className="rwt-portfolio-filter filter-button-default liststyle mb--20">
+                                        {filters.map((filter) => (
+                                        <li className="list-item" key={filter.id} >
+                                            <button
+                                            onClick={handleChange}
+                                            className={
+                                                filter.siteaddress === activeFilterColor
+                                                ? "current"
+                                                : " "
+                                            }
+                                            id={filter.siteaddress}
+                                            >
+                                            <div className="none_pointer">
+                                                {filter.texter}
+                                            </div>
+                                            </button>
+                                        </li>
+                                        ))}
+                                    </ul>
+                                </div>
+                            </div>
+                            {/**cards end */}
                         {/* Start Service Area  */}
                         <div className="rn-service-area rn-section-gap ">
                             <div className="container">

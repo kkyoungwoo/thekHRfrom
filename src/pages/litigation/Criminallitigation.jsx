@@ -1,7 +1,37 @@
-import React from 'react';
+import React, { useState, useEffect } from "react";
 import SEO from "../../common/SEO";
 import Layout from "../../common/Layout";
 import BreadcrumbOne from "../../elements/breadcrumb/BreadcrumbOne";
+
+import { useHistory } from 'react-router-dom'
+
+const filters = [
+    {
+      id: 1,
+      text: "1",
+      texter: "형사 사건",
+      siteaddress:"/criminallitigation"
+    },
+    {
+      id: 2,
+      text: "2",
+      texter: "민사 사건",
+      siteaddress:"/civillitigation"
+    },
+    {
+      id: 3,
+      text: "3",
+      texter: "가사 사건",
+      siteaddress:"/familylitigation"
+    },
+    {
+      id: 4,
+      text: "4",
+      texter: "행정 사건",
+      siteaddress:"/administrativelitigation"
+    }
+];
+
 
 const Data = 
 {
@@ -41,17 +71,56 @@ const Data =
     }
 
 const Criminallitigation = () => {
+
+    let history = useHistory();
+
+    const [activeFilter, setActiveFilter] = useState("criminallitigation");
+    const activeFilterColor = "/criminallitigation";
+    
+    const handleChange = (e) => {
+        setActiveFilter(e.target.id);
+    }
+    
+    useEffect(()=>{
+        history.push(activeFilter)
+    },[activeFilter])
+
     return (
         <>
             <SEO title="Portfolio Three Column || Doob - React Business  Template" />
             <Layout>
-                <BreadcrumbOne 
-                    title="Criminallitigation <br /> Quick Copy & Make site."
-                    rootUrl="/"
-                    parentUrl="Home"
-                    currentUrl="Portfolio Three Column"
-                />
                 <div className="rwt-portfolio-details rn-section-gap">
+                    {/**cards start */}
+                        <div Column="col-lg-4 col-md-6 mt--30 portfolio " >
+                            <div className="col-lg-12">
+                                <ul className="rwt-portfolio-filter filter-button-default liststyle mb--20">
+                                    {filters.map((filter) => (
+                                    <li className="list-item" key={filter.id} >
+                                        <button
+                                        onClick={handleChange}
+                                        className={
+                                            filter.siteaddress === activeFilterColor
+                                            ? "current"
+                                            : " "
+                                        }
+                                        id={filter.siteaddress}
+                                        >
+                                        <div className="none_pointer">
+                                            {filter.texter}
+                                        </div>
+                                        </button>
+                                    </li>
+                                    ))}
+                                </ul>
+                            </div>
+                        </div>
+                    {/**cards end */}
+                    <BreadcrumbOne 
+                        title="Familylitigation <br /> Quick Copy & Make site."
+                        rootUrl="/"
+                        parentUrl="Home"
+                        currentUrl="Portfolio Three Column"
+                    />
                     <div className="container">
                         <div className="row">
                             <div className="col-lg-10 offset-lg-1">
