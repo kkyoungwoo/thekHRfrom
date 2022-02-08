@@ -1,6 +1,50 @@
-import React from 'react';
+import React, { useState, useEffect } from "react";
 import SEO from "../../common/SEO";
 import Layout from "../../common/Layout";
+
+import { useHistory } from 'react-router-dom'
+
+const filters = [
+    {
+      id: 1,
+      text: "1",
+      texter: "주민등록",
+      siteaddress:"/residentregistration"
+    },
+    {
+      id: 2,
+      text: "2",
+      texter: "본인 등록 신고",
+      siteaddress:"/myselfregistration"
+    },
+    {
+      id: 3,
+      text: "3",
+      texter: "친권 등록신고",
+      siteaddress:"/parentalregistration"
+    },
+    {
+      id: 4,
+      text: "4",
+      texter: "자녀 등록신고",
+      siteaddress:"/descendantregistration"
+    },
+    {
+      id: 5,
+      text: "5",
+      texter: "기아,고아 등록신고",
+      siteaddress:"/orphanregistration"
+    },
+    {
+      id: 6,
+      text: "6",
+      texter: "기타 절차 안내",
+      siteaddress:"/onotherregistration"
+    }
+];
+
+
+const alldata = filters;
 
 const data = 
 {
@@ -40,12 +84,47 @@ const data =
 }
 
 const Descendantregistration = () => {
+
+    
+    let history = useHistory();
+
+    const [activeFilter, setActiveFilter] = useState();
+    
+    const handleChange = (e) => {
+        setActiveFilter(e.target.className);
+    }
+    useEffect(()=>{
+        history.push(activeFilter)
+    },[activeFilter])
+    
+
+
     return (
         <>
             <SEO title="Portfolio Three Column || Doob - React Business  Template" />
             <Layout>
                 <div className="rwt-portfolio-details rn-section-gap">
                     <div className="container">
+                        {/**cards start */}
+                        <div Column="col-lg-4 col-md-6 mt--30 portfolio " >
+                            <div className="col-lg-12">
+                                <ul className="rwt-portfolio-filter filter-button-default liststyle mb--20">
+                                    {filters.map((filter) => (
+                                    <li className="list-item" key={filter.id} >
+                                        <button
+                                        onClick={handleChange}
+                                        className={filter.siteaddress}
+                                        >
+                                        <div className="none_pointer">
+                                            {filter.texter}
+                                        </div>
+                                        </button>
+                                    </li>
+                                    ))}
+                                </ul>
+                            </div>
+                        </div>
+                        {/**cards end */}
                         <div className="row">
                             <div className="col-lg-10 offset-lg-1">
                                 <div className="inner">

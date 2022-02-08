@@ -1,49 +1,50 @@
 import React, { useState, useEffect } from "react";
 import SEO from "../../common/SEO";
 import Layout from "../../common/Layout";
-import PortfolioData from "../../data/portfolio/PortfolioData.json";
+
+import { useHistory } from 'react-router-dom'
 
 const filters = [
     {
       id: 1,
-      text: "all",
+      text: "1",
       texter: "주민등록",
-      address:"/residentregistration"
+      siteaddress:"/residentregistration"
     },
     {
       id: 2,
       text: "2",
       texter: "본인 등록 신고",
-      address:"/myselfregistration"
+      siteaddress:"/myselfregistration"
     },
     {
       id: 3,
       text: "3",
       texter: "친권 등록신고",
-      address:"/parentalregistration"
+      siteaddress:"/parentalregistration"
     },
     {
       id: 4,
       text: "4",
       texter: "자녀 등록신고",
-      address:"/descendantregistration"
+      siteaddress:"/descendantregistration"
     },
     {
       id: 5,
       text: "5",
       texter: "기아,고아 등록신고",
-      address:"/orphanregistration"
+      siteaddress:"/orphanregistration"
     },
     {
       id: 6,
       text: "6",
       texter: "기타 절차 안내",
-      address:"/onotherregistration"
+      siteaddress:"/onotherregistration"
     }
 ];
 
 
-const alldata = PortfolioData;
+const alldata = filters;
 
 
 const data = 
@@ -89,34 +90,17 @@ const data =
 
 const Myselfregistration = () => {
 
-    const [getAllItems] = useState(alldata);
-        const [dataVisibleCount, setDataVisibleCount] = useState(50);
-        const [dataIncrement] = useState(6) ;
-        const [noMorePost, setNoMorePost] = useState(false);
-        const [activeFilter, setActiveFilter] = useState("");
-        const [visibleItems, setVisibleItems] = useState([]);
-        useEffect(() => {
-            setActiveFilter(filters[0].text.toLowerCase());
-            setVisibleItems(getAllItems.filter((item) => item.id <= dataVisibleCount));
-        }, []);
+    let history = useHistory();
 
-        const handleChange = (e) => {
-            e.preventDefault();
-            setActiveFilter(e.target.className);
-            let tempData;
-            if (e.target.className === filters[0].text.toLowerCase()) {
-              tempData = getAllItems.filter((data) => data.id <= dataVisibleCount);
-            } else {
-              tempData = getAllItems.filter(
-                (data) =>
-                  data.category === e.target.className &&
-                  data.id <= dataVisibleCount
-              );
-            }
-            setVisibleItems(tempData);
-            console.log("hihi")
-        };
+    const [activeFilter, setActiveFilter] = useState();
     
+    const handleChange = (e) => {
+        setActiveFilter(e.target.className);
+    }
+    useEffect(()=>{
+        history.push(activeFilter)
+    },[activeFilter])
+
     return (
         <>
             <SEO title="Portfolio Three Column || Doob - React Business  Template" />
@@ -130,11 +114,7 @@ const Myselfregistration = () => {
                                 <li className="list-item" key={filter.id} >
                                     <button
                                     onClick={handleChange}
-                                    className={
-                                        filter.text.toLowerCase() === activeFilter
-                                        ? "current"
-                                        : filter.text
-                                    }
+                                    className={filter.siteaddress}
                                     >
                                     <div className="none_pointer">
                                         {filter.texter}
