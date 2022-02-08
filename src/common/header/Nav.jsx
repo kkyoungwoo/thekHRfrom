@@ -78,7 +78,7 @@ const Nav = () => {
                 </ul>
             </li>
 
-            <li className="has-droupdown" onClick={plusHandlerE}><Link to="#">고객센터<span className='mobile_header'> + </span></Link>
+            <li className="has-droupdown" onClick={plusHandlerE}><Link to="#">고객센터<span className='mobile_header'> {plusE} </span></Link>
                 <ul className="submenu">
                     <li><Link to="/visainquiry">비자 문의</Link></li>
                     <li><Link to="/workinquiry">일자리 문의</Link></li>

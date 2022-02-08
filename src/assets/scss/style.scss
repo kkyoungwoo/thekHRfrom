@@ -127,3 +127,11 @@ body .skiptranslate iframe{
 .none_pointer{
     pointer-events: none;
 }
+
+.mobile_header{
+    display: none;
+    @media screen and (max-width: 993px) {
+        display: inline-block;
+        margin-left: 10px;
+    }
+}
