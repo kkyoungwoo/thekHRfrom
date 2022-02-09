@@ -8,22 +8,9 @@ const PortfolioItem = ({ portfolio }) => {
             justifyContent:"center",
             alignItems:"center"
         }}>
-            <div className="inner">
-                <div className="thumbnail">
-                    <figure className="card-image">
-                        <Link to={process.env.PUBLIC_URL + `/employmentvisa/${portfolio.id}`}>
-                        </Link>
-                    </figure>
-                    <Link to={process.env.PUBLIC_URL + `/employmentvisa/${portfolio.id}`} className="rwt-overlay"></Link>
-                </div>
-                <div className="content">
-                    <h5 className="title mb--10">
-                        <Link to={process.env.PUBLIC_URL + `/employmentvisa/${portfolio.id}`}>
-                            {portfolio.title}
-                        </Link>
-                    </h5>
-                </div>
-            </div>
+            <Link to={process.env.PUBLIC_URL + `/employmentvisa/${portfolio.id}`} className="visa_cards_data">
+                {portfolio.title}
+            </Link>
         </div>
     )
 }
