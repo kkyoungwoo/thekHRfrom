@@ -19,59 +19,42 @@ const filters = [
     {
       id: 2,
       text: "2",
-      texter: "D-2",
-      siteaddress:"/d2"
+      texter: "D-4 (어학원)",
+      siteaddress:"/d4"
     },
     {
       id: 3,
       text: "3",
-      texter: "D-4",
-      siteaddress:"/d4"
+      texter: "D-2 (대학)",
+      siteaddress:"/d2"
     }
 ];
 
 
 const callToActionData = {
-    title: "유학생활 준비가 되셨나요?",
-    subtitle: "유학을 위한 최고의 선택",
-    btnText: "THE K visa",
+    title: "어학원 입학 준비가 되셨나요?",
+    subtitle: "대한민국 어학원 입학을 위한 최고의 선택",
+    btnText: "Contact Us",
 }
 
 const TimelineData = [
     {
         id: "1",
         date: "Step-1",
-        title: "Your working process you can present.",
-        description: "Lorem ipsum dolor sit amet at — consectetur adipisicing elit. Hic, expedita. Incidunt laboriosam.",
+        title: "한국어를 배우는 과정입니다.",
+        description: "한국 대학교 어학원을 통해 체계적으로 한국어를 배울 수 있습니다. 어학연수를 위한 비자 D-4는 최대 2년 연장이 가능하며 구직 비자는 D-10, 대학 진학 비자는 D-2로 전환 가능합니다.",
         image: "timeline-01",
         workingStep: [
             {
-                stepTitle: "Gain your works",
-                stepDescription: "Lorem ipsum dolor sit amet at consectetur adipisicing",
+                stepTitle: "D-4 비자 설명",
+                stepDescription: "해외거주 외국인이 한국어를 배우기 위해 대한민국으로 들어올 수 있는 비자",
             },
             {
-                stepTitle: "Working process",
-                stepDescription: "Lorem ipsum dolor sit amet at consectetur adipisicing",
+                stepTitle: "D-4 비자 안내",
+                stepDescription: "고등학교 일정 성적이상인 해외거주 외국인이 대한민국 어학원을 선택하여 초대장 및 입학허가서를 수령하고 비자를 신청할 수 있습니다.",
             },
         ]
-    },
-    {
-        id: "2",
-        date: "Step-2",
-        title: "Our compnay working process to present.",
-        description: "Lorem ipsum dolor sit amet at — consectetur adipisicing elit. Hic, expedita. Incidunt laboriosam.",
-        image: "timeline-02",
-        workingStep: [
-            {
-                stepTitle: "Follow this process",
-                stepDescription: "Lorem ipsum dolor sit amet at consectetur adipisicing",
-            },
-            {
-                stepTitle: "Working experience",
-                stepDescription: "Lorem ipsum dolor sit amet at consectetur adipisicing",
-            },
-        ]
-    },
+    }
 ]
 
 const D4 = () => {
@@ -129,8 +112,8 @@ const D4 = () => {
                                             textAlign = "text-center"
                                             radiusRounded = ""
                                             subtitle = "What we can do for you"
-                                            title = "Services provide for you."
-                                            description = "There are many variations of passages of Lorem Ipsum available, <br /> but the majority have suffered alteration."
+                                            title = "어학원 입학 후 취업 컨설팅이 가능합니다."
+                                            description = "어학원 입학이 된 이후에도 우리는 한국에서 필요한 다양한 서비스를 제공할 수 있습니다."
                                          />
                                     </div>
                                 </div>
@@ -203,7 +186,6 @@ const D4 = () => {
                                                                     animateIn="fadeInUp"
                                                                     animateOut="fadeInOut"
                                                                     animateOnce={true}>
-                                                                        <a className="btn-default btn-large round" href="/contact"><span>Get Started Now</span></a>
                                                                     </ScrollAnimation>
                                                                 </div>
                                                             </div>

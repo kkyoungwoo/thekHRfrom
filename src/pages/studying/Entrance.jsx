@@ -22,14 +22,14 @@ const filters = [
     {
       id: 2,
       text: "2",
-      texter: "D-2",
-      siteaddress:"/d2"
+      texter: "D-4 (어학원)",
+      siteaddress:"/d4"
     },
     {
       id: 3,
       text: "3",
-      texter: "D-4",
-      siteaddress:"/d4"
+      texter: "D-2 (대학)",
+      siteaddress:"/d2"
     }
 ];
 
@@ -38,42 +38,38 @@ const filters = [
 const callToActionData = {
     title: "유학생활 준비가 되셨나요?",
     subtitle: "유학을 위한 최고의 선택",
-    btnText: "THE K visa",
+    btnText: "Contact Us",
 }
 
 const TimelineData = [
     {
         id: "1",
         date: "Step-1",
-        title: "Your working process you can present.",
-        description: "Lorem ipsum dolor sit amet at — consectetur adipisicing elit. Hic, expedita. Incidunt laboriosam.",
-        image: "timeline-01",
+        title: "해외거주 외국인",
+        description: "D-2 또는 D-4 비자를 발급받을 수 있습니다.",
+        image: "blog-03",
         workingStep: [
             {
-                stepTitle: "Gain your works",
-                stepDescription: "Lorem ipsum dolor sit amet at consectetur adipisicing",
+                stepTitle: "D-4 어학원 (신입학)",
+                stepDescription: "한국어를 잘 모르거나 대학교를 나오지 않았을 때 신청",
             },
             {
-                stepTitle: "Working process",
-                stepDescription: "Lorem ipsum dolor sit amet at consectetur adipisicing",
+                stepTitle: "D-2 대학교 (신입학, 편입학)",
+                stepDescription: "TOPIK 3급 이상 등, 그리고 입학하려는 학교마다 기준이 다릅니다.",
             },
         ]
     },
     {
         id: "2",
         date: "Step-2",
-        title: "Our compnay working process to present.",
-        description: "Lorem ipsum dolor sit amet at — consectetur adipisicing elit. Hic, expedita. Incidunt laboriosam.",
-        image: "timeline-02",
+        title: "국내거주 외국인",
+        description: "국내에서 대학교 신입학 및 편입학을 진행할 수 있습니다.",
+        image: "blog-02",
         workingStep: [
             {
-                stepTitle: "Follow this process",
-                stepDescription: "Lorem ipsum dolor sit amet at consectetur adipisicing",
-            },
-            {
-                stepTitle: "Working experience",
-                stepDescription: "Lorem ipsum dolor sit amet at consectetur adipisicing",
-            },
+                stepTitle: "D-2 대학교 (신입학, 편입학)",
+                stepDescription: "어학원 성적증명서( 80점 ) 또는 TOPIK 등급 및 어학원 출석 80% 이상 등과 입학하려는 학교마다 기준이 다릅니다.",
+            }
         ]
     },
 ]
@@ -125,10 +121,10 @@ const Entrance = () => {
                             </div>
                             {/**cards end */}
                             <BreadcrumbOne 
-                                title="The Easiest Way To Create Website <br /> Quick Copy & Make site."
+                                title="대한민국에서 유학생활을 시작하시고 싶으신가요?"
                                 rootUrl="/"
                                 parentUrl="Home"
-                                currentUrl="Portfolio Three Column"
+                                currentUrl="입학문의"
                             />
                         {/* Start Service Area  */}
                         <div className="rn-service-area rn-section-gap ">
@@ -140,7 +136,7 @@ const Entrance = () => {
                                             radiusRounded = ""
                                             subtitle = "What we can do for you"
                                             title = "Services provide for you."
-                                            description = "There are many variations of passages of Lorem Ipsum available, <br /> but the majority have suffered alteration."
+                                            description = "유학생활이 시작된 이후에도 우리는 한국에서 필요한 다양한 서비스를 제공할 수 있습니다."
                                          />
                                     </div>
                                 </div>
@@ -213,14 +209,13 @@ const Entrance = () => {
                                                                     animateIn="fadeInUp"
                                                                     animateOut="fadeInOut"
                                                                     animateOnce={true}>
-                                                                        <a className="btn-default btn-large round" href="/contact"><span>Get Started Now</span></a>
                                                                     </ScrollAnimation>
                                                                 </div>
                                                             </div>
                                                         </div>
                                                         <div className="order-1 order-lg-2 col-lg-6">
                                                             <div className="thumbnail">
-                                                                <img className="w-100" src={`./images/timeline/${data.image}.jpg`} alt="Corporate React Template" />
+                                                                <img className="w-100" src={`./images/blog/${data.image}.jpg`} alt="Corporate React Template" />
                                                             </div>
                                                         </div>
                                                     </div>

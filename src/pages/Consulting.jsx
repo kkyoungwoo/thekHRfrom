@@ -5,7 +5,7 @@ import HeaderTopBar from '../common/header/HeaderTopBar';
 import AboutFour from '../elements/about/AboutFour';
 import TabTwo from '../elements/tab/TabThree';
 
-import CounterUpFour from '../elements/counterup/CounterUpFour';
+import CounterUpOne from '../elements/counterup/CounterUpOne';
 import CalltoActionFive from '../elements/calltoaction/CalltoActionFive';
 import TeamFour from '../elements/team/TeamFour';
 import SectionTitle from "../elements/sectionTitle/SectionTitle";
@@ -13,7 +13,7 @@ import Separator from "../elements/separator/Separator";
 import FooterOne from '../common/footer/FooterOne';
 import Copyright from '../common/footer/Copyright';
 
-
+import CalltoActionOne from "../elements/calltoaction/CalltoActionOne";
 
 const Consulting = () => {
     return (
@@ -37,12 +37,23 @@ const Consulting = () => {
                 </div>
                 {/* End Slider area  */}
 
+                <div className="main-content">
+
+                    {/* //Start Elements Area//  */}
+                    <div className="rwt-callto-action-area rn-section-gap">
+                        <div className="wrapper">
+                            <CalltoActionOne />
+                        </div>
+                    </div>
+                    {/* //End Elements Area//  */}
+                    </div>
+
                 <AboutFour image="./images/about/contact-image.jpg" />
 
                 {/* Start Elements Area  */}
                 <div className="rwt-counterup-area rn-section-gapBottom mt_dec--30">
                     <div className="container">
-                        <CounterUpFour column="col-lg-3 col-md-6 col-sm-6 col-12" counterStyle="counter-style-4" textALign="text-center" />   
+                        <CounterUpOne column="col-lg-3 col-md-6 col-sm-6 col-12" counterStyle="counter-style-4" textALign="text-center" />   
                     </div>
                 </div>
                 {/* End Elements Area  */}

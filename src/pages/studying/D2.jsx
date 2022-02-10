@@ -19,59 +19,42 @@ const filters = [
     {
       id: 2,
       text: "2",
-      texter: "D-2",
-      siteaddress:"/d2"
+      texter: "D-4 (어학원)",
+      siteaddress:"/d4"
     },
     {
       id: 3,
       text: "3",
-      texter: "D-4",
-      siteaddress:"/d4"
+      texter: "D-2 (대학)",
+      siteaddress:"/d2"
     }
 ];
 
 
 const callToActionData = {
-    title: "유학생활 준비가 되셨나요?",
-    subtitle: "유학을 위한 최고의 선택",
-    btnText: "THE K visa",
+    title: "대학교 입학 준비가 되셨나요?",
+    subtitle: "대한민국 대학교 입학을 위한 최고의 선택",
+    btnText: "Contact Us",
 }
 
 const TimelineData = [
     {
         id: "1",
         date: "Step-1",
-        title: "Your working process you can present.",
-        description: "Lorem ipsum dolor sit amet at — consectetur adipisicing elit. Hic, expedita. Incidunt laboriosam.",
+        title: "해외거주 외국인",
+        description: "학사,석사,박사 학위를 위해 한국에서 공부할 수 있습니다.",
         image: "timeline-01",
         workingStep: [
             {
-                stepTitle: "Gain your works",
-                stepDescription: "Lorem ipsum dolor sit amet at consectetur adipisicing",
+                stepTitle: "신입학",
+                stepDescription: "고등학교 일정 성적이상 그리고 토픽 3급 이상이 되는 외국인이 대한민국의 학교를 선택을 하고 D-2 비자 발급을 신청할 수 있습니다.",
             },
             {
-                stepTitle: "Working process",
-                stepDescription: "Lorem ipsum dolor sit amet at consectetur adipisicing",
-            },
+                stepTitle: "편입학",
+                stepDescription: "전문대학 학생 또는 전문대학,대학교 대학졸업자가 대한민국의 학교를 선택하고 D-2 비자 발급을 신청할 수 있습니다.",
+            }
         ]
-    },
-    {
-        id: "2",
-        date: "Step-2",
-        title: "Our compnay working process to present.",
-        description: "Lorem ipsum dolor sit amet at — consectetur adipisicing elit. Hic, expedita. Incidunt laboriosam.",
-        image: "timeline-02",
-        workingStep: [
-            {
-                stepTitle: "Follow this process",
-                stepDescription: "Lorem ipsum dolor sit amet at consectetur adipisicing",
-            },
-            {
-                stepTitle: "Working experience",
-                stepDescription: "Lorem ipsum dolor sit amet at consectetur adipisicing",
-            },
-        ]
-    },
+    }
 ]
 
 const D2 = () => {
@@ -129,8 +112,8 @@ const D2 = () => {
                                             textAlign = "text-center"
                                             radiusRounded = ""
                                             subtitle = "What we can do for you"
-                                            title = "Services provide for you."
-                                            description = "There are many variations of passages of Lorem Ipsum available, <br /> but the majority have suffered alteration."
+                                            title = "대학 입학 후 취업 컨설팅이 가능합니다."
+                                            description = "대학 입학이 된 이후에도 우리는 한국에서 필요한 다양한 서비스를 제공할 수 있습니다.<br/>대학교를 나온 후 E-7 전문직 취업 비자를 발급 받아 F비자 취득자격을 얻을 수도 있습니다."
                                          />
                                     </div>
                                 </div>
@@ -203,7 +186,6 @@ const D2 = () => {
                                                                     animateIn="fadeInUp"
                                                                     animateOut="fadeInOut"
                                                                     animateOnce={true}>
-                                                                        <a className="btn-default btn-large round" href="/contact"><span>Get Started Now</span></a>
                                                                     </ScrollAnimation>
                                                                 </div>
                                                             </div>

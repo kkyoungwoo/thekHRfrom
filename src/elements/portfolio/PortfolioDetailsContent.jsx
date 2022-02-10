@@ -162,7 +162,7 @@ const PortfolioDetailsContent = ({ data }) => {
 
                                     <div className="row row--15">
                                         {visibleItems.map((item) => (
-                                            <div key={item.id} className="col-lg-4 col-md-6 mt--30 portfolio box-grid-layout no-overlay"  >
+                                            <div key={item.id} className="col-lg-4 col-md-6 mt--30 portfolio box-grid-layout no-overlay" >
                                                 <PortfolioItem portfolio={item} />
                                             </div>
                                         ))}

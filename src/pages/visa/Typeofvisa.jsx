@@ -13,12 +13,12 @@ const Typeofvisa = () => {
                     <div className="rwt-portfolio-area rn-section-gap">
                         <div className="container">
                             <div className="row">
-                                <div className="col-lg-12">
+                                <div className="col-lg-12 mb--50">
                                         <SectionTitle
                                             textAlign = "text-center"
                                             radiusRounded = ""
-                                            subtitle = "Portfolio Three Column"
-                                            title = "You can customize everything!"
+                                            subtitle = "비자발급 안내 문서"
+                                            title = "한국 체류 비자 솔루션 제공"
                                             description = ""
                                         />
                                 </div>

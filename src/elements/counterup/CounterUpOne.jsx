@@ -4,22 +4,23 @@ import TrackVisibility from "react-on-screen";
 
 const Data = [
     {
-        countNum : 199,
-        countTitle: 'Happy Clients.',
-        description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry',
+        countNum : 500,
+        countTitle: '행복한 의뢰인',
     },
     {
-        countNum : 575,
-        countTitle: 'Employees',
-        description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry',
+        countNum : 100,
+        countTitle: '소개받은 의뢰인',
     },
     {
-        countNum : 69,
-        countTitle: 'Useful Programs',
-        description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry',
+        countNum : 50,
+        countTitle: '재방문 의뢰인',
+    },
+    {
+        countNum : 5,
+        countTitle: '협력업체',
     },
 ];
-const CounterUpTwo = ({textALign, counterStyle, column}) => {
+const CounterUpOne = ({textALign, counterStyle, column}) => {
     return (
         <div className="row">
             {Data.map((data, index) => (
@@ -29,12 +30,11 @@ const CounterUpTwo = ({textALign, counterStyle, column}) => {
                             {({ isVisible }) => isVisible && 
                                 <div className="count-number">{isVisible ? <CountUp end={data.countNum} /> : 0}</div>}
                         </TrackVisibility>
-                        <h5 className="title">{data.countTitle}</h5>
-                        <p className="description">{data.description}</p>
+                        <h5 className="counter-title">{data.countTitle}</h5>
                     </div>
                 </div>
             ))}
         </div>
     )
 }
-export default CounterUpTwo;
+export default CounterUpOne;

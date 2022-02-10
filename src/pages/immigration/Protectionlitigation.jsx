@@ -20,51 +20,41 @@ const filters = [
     {
       id: 3,
       text: "3",
-      texter: "보호일시 해제",
+      texter: "보호 일시해제",
       siteaddress:"/protectionlitigation"
     }
 ];
 
-const Data = 
+const data = 
 {
-        "id": 1,
-        "portfolioImage": "./images/portfolio/portfolio-05.jpg",
-        "image": "images/portfolio/portfolio-05.jpg",
-        "title": "React Development",
-        "subtitle": "Awesome portfolio",
-        "date": "01 March 2021",
-        "client": "Rainbow Themes",
-        "category": "design",
-        "awards": ["2020 Design beautiful apps Finale Awards"],
-        "excerpt": "Design beautiful apps.",
-        "body": ["<p>In a typical React application, data is passed top-down (parent to child) via props, but such usage can be cumbersome for certain types of props (e.g. locale preference, UI theme).</p> <br /> <p>that are required by many components within an application. Context provides a way to share values like these between components without having to explicitly pass a prop through every level of the tree.</p> <br /> <p>that are required by many components within an application. Context provides a way to share values like these between components without having to explicitly pass a prop through every level of the tree.</p>"],
-        "btn": {
-            "buttontext": "더 알아보기",
-            "link": "/"
-        },
-        "largeImage": "images/portfolio/portfolio-05.jpg",
-        "subContent": {
-            "title": "Digital Marketing.",
-            "subtext": "We provide digital experience services to startups and small businesses. We help our clients succeed by creating brand identities."
-        },
-        "subContent2": {
-            "title": "App Development.",
-            "subtext": "We provide App Development services to startups and small businesses. We help our clients succeed by creating brand identities."
-        },
-        "subContent3": {
-            "title": "Solution.",
-            "subtext": "We provide problem solutions services to startups and small businesses. We help our clients succeed by creating brand identities."
-        },
-        "gallery": {
-            "imageOne": "images/portfolio/portfolio-01.jpg",
-            "imageTwo": "images/portfolio/portfolio-02.jpg",
-            "imageThree": "images/portfolio/portfolio-03.jpg"
-        }
-    }
+    "id": 1,
+    "title": "",
+    "date": "-",
+    "client": "보호 일시해제",
+    "month":"상담 무료",
+    
+    "subtitle": "상세 내용",
+    "body": ["<p>보호조치 해제 및 강제 출국 이의제기 절차를 진행하여 부당한 문제를 해결할 수 있습니다.</p>"],
+
+    "content" : [
+            {
+                "title": "보호조치를 실시하는 이유",
+                "subtext": ["<p>강제퇴거 명령을 받게 된 외국인 중에서 도주할 우려가 있는 외국인에 대해서는 보호조치를 할 수 있습니다. 강제퇴거 명령 대상은 주로 불법체류자와 형사사범입니다.<br/>이러한 외국인이 도주를 하지 못하도록 방지하는 것이 바로 보호조치이며, 출국 전까지 외국인 보호소에 수감됩니다.<br/>보통 10일 이내로 보호기간이 지정되지만 부득이한 사유가 있다면 10일을 초과하지 않는 범위 내에서 1회 연장할 수 있고 강제퇴거 명령을 받은 외국인은 본국으로 송환이 가능해질 때까지 보호조치를 받게 됩니다</p>"]
+            },
+            {
+                "title": "일시해제 청구 사유",
+                "subtext": ["<p>1. 외국인의 생명과 신체에 중대한 위협이 생긴 상황<br/>2. 상당한 금액의 보증금이나 임금을 돌려받지 못한 상황<br/>3. 중대한 인도적 사유가 있는 경우에도 일시해제를 청구가능 (한국에서 가정을 만든 외국인 등)<br/>4. 기타</p>"]
+            },
+            {
+                "title": "일시해제 신청 방법",
+                "subtext": ["<p>강제퇴거 명령을 받게 되어 외국인 보호소에서 보호조치를 받게 되었다면 7일 이내에 이의신청을 할 수가 있습니다.<br/>이때 이의신청이 인용되면 보호조치 일시해제가 되므로 특별체류허가를 받을 수 있게 됩니다.<br/>그러나 만약 이의신청이 인용되지 않았다면 절차가 까다롭고 복잡해 지게 됩니다.</p>"]
+            },
+        ]
+}
+
 
 const Protectionlitigation = () => {
 
-    
     let history = useHistory();
 
     const [activeFilter, setActiveFilter] = useState("protectionlitigation");
@@ -77,8 +67,6 @@ const Protectionlitigation = () => {
     useEffect(()=>{
         history.push(activeFilter)
     },[activeFilter])
-
-
 
     return (
         <>
@@ -110,65 +98,49 @@ const Protectionlitigation = () => {
                         </div>
                     </div>
                     {/**cards end */}
-                    <BreadcrumbOne 
-                        title="Familylitigation <br /> Quick Copy & Make site."
+                    <div className="container">
+                        <BreadcrumbOne 
+                        title="보호 일시해제"
                         rootUrl="/"
                         parentUrl="Home"
-                        currentUrl="Portfolio Three Column"
-                    />
-                    <div className="container">
+                        currentUrl="외국인 보호조치를 일시해제를 통해 해결할 수 있습니다."
+                        />
                         <div className="row">
                             <div className="col-lg-10 offset-lg-1">
                                 <div className="inner">
                                     <div className="details-list">
                                         <div className="thumbnail alignwide">
-                                            <img className="radius w-100" src={`${process.env.PUBLIC_URL}/${Data.largeImage}`} alt="Corporate Image" />
                                         </div>
                                         <div className="row mt--40 row--30">
-                                            <div className="col-lg-6">
+                                            <div className="col-lg-12">
                                                 <div className="content-left">
-                                                    <h4 className="title">{Data.title}</h4>
+                                                    <h4 className="title">{data.title}</h4>
                                                     <div className="single-list-wrapper">
                                                         <div className="single-list">
-                                                            <label>Date:</label>
-                                                            <span>{Data.date}</span>
+                                                            <label>분류:</label>
+                                                            <span>{data.date}</span>
                                                         </div>
                                                         <div className="single-list">
-                                                            <label>Client:</label>
-                                                            <span>{Data.client}</span>
+                                                            <label>요약:</label>
+                                                            <span>{data.client}</span>
                                                         </div>
                                                         <div className="single-list">
-                                                            <label>Category:</label>
-                                                            <span>{Data.category}</span>
+                                                            <label>요금:</label>
+                                                            <span>{data.month}</span>
                                                         </div>
                                                     </div>
-                                                    <div className="view-btn mt--50">
-                                                        <a className="btn-default btn-large round" href="/">{Data.btn.buttontext}</a>
+                                                </div>
+                                                <div className="col mt--120">
+                                                    <h3 className="subtitle">{data.subtitle}</h3>
+                                                    <div className="description" dangerouslySetInnerHTML={{__html: data.body}}></div>
+                                                    
+                                                    {data.content.map((item,idx) => (
+                                                    <div className="view-btn mt--50" key={idx}>
+                                                        <h5 className="subtitle">{data.content[idx].title}</h5>
+                                                        <div className="description" dangerouslySetInnerHTML={{__html: data.content[idx].subtext}}></div>
                                                     </div>
+                                                    ))}
                                                 </div>
-                                            </div>
-                                            <div className="col-lg-6 mt_md--30 mt_sm--30">
-                                                <div className="content-right">
-                                                    <h5 className="subtitle">{Data.subtitle}</h5>
-                                                    <div className="description" dangerouslySetInnerHTML={{__html: Data.body}}></div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div className="portfolio-gallery mt--40">
-                                        <div className="gallery mt--30">
-                                            <div className="thumbnail">
-                                                <img className="radius w-100" src={`${process.env.PUBLIC_URL}/${Data.gallery.imageOne}`} alt="Corporate Image" />
-                                            </div>
-                                        </div>
-                                        <div className="gallery mt--30">
-                                            <div className="thumbnail">
-                                                <img className="radius w-100" src={`${process.env.PUBLIC_URL}/${Data.gallery.imageTwo}`} alt="Corporate Image" />
-                                            </div>
-                                        </div>
-                                        <div className="gallery mt--30">
-                                            <div className="thumbnail">
-                                                <img className="radius w-100" src={`${process.env.PUBLIC_URL}/${Data.gallery.imageThree}`} alt="Corporate Image" />
                                             </div>
                                         </div>
                                     </div>

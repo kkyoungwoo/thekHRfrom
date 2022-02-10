@@ -28,27 +28,27 @@
             {
                 "id": 2,
                 "text": "취업",
-                "url": "/employmentvisa"
+                "url": "/typeofvisa"
             },
             {
                 "id": 3,
                 "text": "투자",
-                "url": "/investmentvisa"
+                "url": "/typeofvisa"
             },
             {
                 "id": 4,
                 "text": "거주 / 초대",
-                "url": "/residencevisa"
+                "url": "/typeofvisa"
             },
             {
                 "id": 5,
                 "text": "결혼 / 이혼",
-                "url": "/marriagevisa"
+                "url": "/typeofvisa"
             },
             {
                 "id": 6,
                 "text": "재외동포",
-                "url": "/overseaskoreansvisa"
+                "url": "/typeofvisa"
             }
         ]
     },
@@ -64,13 +64,13 @@
             },
             {
                 "id": 2,
-                "text": "D-2",
-                "url": "/d2"
+                "text": "D-4 (어학원)",
+                "url": "/d4"
             },
             {
                 "id": 3,
-                "text": "D-4",
-                "url": "/d4"
+                "text": "D-2 (대학)",
+                "url": "/d2"
             }
         ]
     },
@@ -82,16 +82,16 @@
             {
                 "id": 1,
                 "text": "출입국 사범 문의",
-                "url": "/immigrationlitigation"
+                "url": "/illegalitylitigation"
             },
             {
                 "id": 2,
                 "text": "불법체류자 구제",
-                "url": "/illegalitylitigation"
+                "url": "/immigrationlitigation"
             },
             {
                 "id": 3,
-                "text": "보호일시 해제",
+                "text": "보호 일시해제",
                 "url": "/protectionlitigation"
             }
         ]

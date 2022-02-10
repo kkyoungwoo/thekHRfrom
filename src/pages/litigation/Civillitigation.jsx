@@ -2,8 +2,12 @@ import React, { useState, useEffect } from "react";
 import SEO from "../../common/SEO";
 import Layout from "../../common/Layout";
 import BreadcrumbOne from "../../elements/breadcrumb/BreadcrumbOne";
+import CountUp from 'react-countup';
+import TrackVisibility from "react-on-screen";
+import CounterUpThree from '../../elements/counterup/CounterUpThree';
 
 import { useHistory } from 'react-router-dom'
+
 
 const filters = [
     {
@@ -32,42 +36,18 @@ const filters = [
     }
 ];
 
-
 const Data = 
 {
         "id": 1,
-        "portfolioImage": "./images/portfolio/portfolio-05.jpg",
-        "image": "images/portfolio/portfolio-05.jpg",
-        "title": "React Development",
-        "subtitle": "Awesome portfolio",
-        "date": "01 March 2021",
-        "client": "Rainbow Themes",
-        "category": "design",
-        "awards": ["2020 Design beautiful apps Finale Awards"],
-        "excerpt": "Design beautiful apps.",
-        "body": ["<p>In a typical React application, data is passed top-down (parent to child) via props, but such usage can be cumbersome for certain types of props (e.g. locale preference, UI theme).</p> <br /> <p>that are required by many components within an application. Context provides a way to share values like these between components without having to explicitly pass a prop through every level of the tree.</p> <br /> <p>that are required by many components within an application. Context provides a way to share values like these between components without having to explicitly pass a prop through every level of the tree.</p>"],
-        "btn": {
-            "buttontext": "더 알아보기",
-            "link": "/"
-        },
-        "largeImage": "images/portfolio/portfolio-05.jpg",
-        "subContent": {
-            "title": "Digital Marketing.",
-            "subtext": "We provide digital experience services to startups and small businesses. We help our clients succeed by creating brand identities."
-        },
-        "subContent2": {
-            "title": "App Development.",
-            "subtext": "We provide App Development services to startups and small businesses. We help our clients succeed by creating brand identities."
-        },
-        "subContent3": {
-            "title": "Solution.",
-            "subtext": "We provide problem solutions services to startups and small businesses. We help our clients succeed by creating brand identities."
-        },
-        "gallery": {
-            "imageOne": "images/portfolio/portfolio-01.jpg",
-            "imageTwo": "images/portfolio/portfolio-02.jpg",
-            "imageThree": "images/portfolio/portfolio-03.jpg"
-        }
+        "title": "THE K 민사업무 솔루션",
+        "date": "법무법인과 협력하여 진행",
+        "client": "전국 가능",
+        "category": "무료 상담",
+        "subtitle": "진행 가능한 민사 업무",
+        "body": ["<p>1. 채권자대위, 채권자취소소송<br/>2. 손해배상소송<br/>3.각종 부동산 소송, 청구이의, 배당이의소송 및 집행정지<br/>4. 건설공사 및 용역대금 소송<br/>5. 종중소송<br/>6. 대여금 및 투자금 소송<br/>7. 그 외 각종 재심 및 추완항소</p>"],
+
+        "largeImage": "images/portfolio/portfolio-05.jpg"
+        
     }
 
 const Civillitigation = () => {
@@ -116,10 +96,10 @@ const Civillitigation = () => {
                         </div>
                     {/**cards end */}
                     <BreadcrumbOne 
-                        title="Familylitigation <br /> Quick Copy & Make site."
+                        title="민사사건 구제 및 심판"
                         rootUrl="/"
                         parentUrl="Home"
-                        currentUrl="Portfolio Three Column"
+                        currentUrl="일반적으로 개인간의 경제적 ·신분적인 다툼이 있는 사건"
                     />
                     <div className="container">
                         <div className="row">
@@ -135,21 +115,19 @@ const Civillitigation = () => {
                                                     <h4 className="title">{Data.title}</h4>
                                                     <div className="single-list-wrapper">
                                                         <div className="single-list">
-                                                            <label>Date:</label>
+                                                            <label>요약:</label>
                                                             <span>{Data.date}</span>
                                                         </div>
                                                         <div className="single-list">
-                                                            <label>Client:</label>
+                                                            <label>업무 지역:</label>
                                                             <span>{Data.client}</span>
                                                         </div>
                                                         <div className="single-list">
-                                                            <label>Category:</label>
+                                                            <label>요금:</label>
                                                             <span>{Data.category}</span>
                                                         </div>
                                                     </div>
-                                                    <div className="view-btn mt--50">
-                                                        <a className="btn-default btn-large round" href="/">{Data.btn.buttontext}</a>
-                                                    </div>
+                                                    <CounterUpThree column="col-lg-6 col-md-6 mt--50 col-sm-6 col-12" counterStyle="counter-style-4" textALign="text-center" />
                                                 </div>
                                             </div>
                                             <div className="col-lg-6 mt_md--30 mt_sm--30">
@@ -157,23 +135,6 @@ const Civillitigation = () => {
                                                     <h5 className="subtitle">{Data.subtitle}</h5>
                                                     <div className="description" dangerouslySetInnerHTML={{__html: Data.body}}></div>
                                                 </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div className="portfolio-gallery mt--40">
-                                        <div className="gallery mt--30">
-                                            <div className="thumbnail">
-                                                <img className="radius w-100" src={`${process.env.PUBLIC_URL}/${Data.gallery.imageOne}`} alt="Corporate Image" />
-                                            </div>
-                                        </div>
-                                        <div className="gallery mt--30">
-                                            <div className="thumbnail">
-                                                <img className="radius w-100" src={`${process.env.PUBLIC_URL}/${Data.gallery.imageTwo}`} alt="Corporate Image" />
-                                            </div>
-                                        </div>
-                                        <div className="gallery mt--30">
-                                            <div className="thumbnail">
-                                                <img className="radius w-100" src={`${process.env.PUBLIC_URL}/${Data.gallery.imageThree}`} alt="Corporate Image" />
                                             </div>
                                         </div>
                                     </div>

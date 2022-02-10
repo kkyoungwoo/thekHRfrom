@@ -45,16 +45,16 @@ const Nav = () => {
             <li className="has-droupdown" onClick={plusHandlerA}><Link to="#">유학<span className='mobile_header'> {plusA} </span></Link>
                 <ul className="submenu">
                     <li><Link to="/entrance">입학문의</Link></li>
-                    <li><Link to="/d2">D-2</Link></li>
-                    <li><Link to="/d4">D-4</Link></li>
+                    <li><Link to="/d4">D-4 (어학원)</Link></li>
+                    <li><Link to="/d2">D-2 (대학)</Link></li>
                 </ul>
             </li>
 
             <li className="has-droupdown" onClick={plusHandlerB}><Link to="#">출입국 사범<span className='mobile_header'> {plusB} </span></Link>
                 <ul className="submenu">
-                    <li><Link to="/immigrationlitigation">출입국 사범 문의</Link></li>
-                    <li><Link to="/illegalitylitigation">불법체류자 구제</Link></li>
-                    <li><Link to="/protectionlitigation">보호일시 해제</Link></li>
+                    <li><Link to="/illegalitylitigation">출입국 사범 문의</Link></li>
+                    <li><Link to="/immigrationlitigation">불법체류자 구제</Link></li>
+                    <li><Link to="/protectionlitigation">보호 일시해제</Link></li>
                 </ul>
             </li>
 

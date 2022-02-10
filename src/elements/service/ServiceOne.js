@@ -6,18 +6,18 @@ import ScrollAnimation from "react-animate-on-scroll";
 const ServiceList = [
     {
         icon: <FiActivity />,
-        title: 'Awarded Design',
-        description: 'There are many variations variations  of passages of Lorem Ipsum available, but the majority have suffered.'
+        title: '안전',
+        description: '합법적인 사업자등록이 되어 있으며 법무법인 등 다양한 기업과 협력하여 문제가 없도록 진행하고 있습니다.'
     },
     {
         icon: <FiCast />,
-        title: 'Design & Creative',
-        description: 'Passages there are many variations variations  of of Lorem Ipsum available, but the majority have suffered.'
+        title: '가능성',
+        description: '비자 발급은 확정이 아닌 심사입니다. 출입국사무소가 원하는 핵심 포인트를 제공하여 비자발급의 가능성을 높입니다.'
     },
     {
         icon: <FiMap />,
-        title: 'App Development',
-        description: 'Variations There are many variations  of passages of Lorem Ipsum available, but the majority have suffered.'
+        title: '장기 계획',
+        description: '한국에서 장기 체류하고 싶은 외국인은 다음 비자 획득을 위해 최소 1년 이상 미리 준비해야 합니다.'
     },
 ]
 
