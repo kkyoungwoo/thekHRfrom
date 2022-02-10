@@ -13,10 +13,10 @@ const Visainquiry = () => {
             <SEO title="Accordion || Doob - React Business  Template" />
             <Layout>
                 <BreadcrumbOne 
-                    title="The Easiest Way To Create Website <br /> Quick Copy & Make site."
+                    title="외국인 비자 발급 서비스"
                     rootUrl="/"
                     parentUrl="Home"
-                    currentUrl="Accordion"
+                    currentUrl="비자를 한 번에 받을 수 있도록 도와드립니다"
                 />
                 <div className="main-content">
 
@@ -28,8 +28,8 @@ const Visainquiry = () => {
                                     <SectionTitle
                                         textAlign = "text-center"
                                         radiusRounded = ""
-                                        subtitle = "Accordion"
-                                        title = "Customize All"
+                                        subtitle = "비자 문의"
+                                        title = "자주하는 질문"
                                         description = ""
                                     />
                                 </div>

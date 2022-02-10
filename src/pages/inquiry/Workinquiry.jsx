@@ -29,8 +29,8 @@ const Workinquiry = () => {
                                     <SectionTitle
                                         textAlign = "text-center"
                                         radiusRounded = ""
-                                        subtitle = "Accordion"
-                                        title = "Customize All"
+                                        subtitle = "일자리 문의"
+                                        title = "자주하는 질문"
                                         description = ""
                                     />
                                 </div>

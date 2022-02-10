@@ -11,10 +11,10 @@ const Price = () => {
             <SEO title="Portfolio Three Column || Doob - React Business  Template" />
             <Layout>
                 <BreadcrumbOne 
-                    title="The Easiest Way To Create Website <br /> Quick Copy & Make site."
+                    title="요금 안내"
                     rootUrl="/"
                     parentUrl="Home"
-                    currentUrl="Pricing"
+                    currentUrl="문제가 발생하기 전에 컨설팅을 받는 것이 가장 현명한 방법입니다."
                 />
                 {/* Start Elements Area  */}
                     <div className="rwt-pricing-area rn-section-gap">
@@ -24,8 +24,8 @@ const Price = () => {
                                         <SectionTitle
                                             textAlign = "text-center"
                                             radiusRounded = ""
-                                            subtitle = "Pricing"
-                                            title = "Pricing Style Five."
+                                            subtitle = "무료상담 후 비용결제"
+                                            title = "합리적인 온라인 가격 정책"
                                             description = ""
                                         />
                                 </div>
@@ -38,22 +38,22 @@ const Price = () => {
                                     <div className="rn-pricing style-5">
                                         <div className="pricing-table-inner">
                                             <div className="pricing-header">
-                                                <h4 className="title">Basic Plan</h4>
+                                                <h4 className="title">사건 상담</h4>
                                                 <div className="pricing">
                                                     <div className="price-wrapper">
                                                         <span className="currency">$</span>
-                                                        <span className="price">29</span>
+                                                        <span className="price">Free</span>
                                                     </div>
-                                                    <span className="subtitle">USD Per Month</span>
+                                                    <span className="subtitle">무료상담 가능</span>
                                                 </div>
                                             </div>
                                             <div className="pricing-body">
                                                 <ul className="list-style--1">
-                                                    <li><FiCheck /> 5 PPC Campaigns</li>
-                                                    <li><FiCheck /> Digital Marketing</li>
-                                                    <li><FiCheck /> Marketing Agency</li>
-                                                    <li><FiCheck /> Seo Friendly</li>
-                                                    <li><FiCheck /> UI/UX designs</li>
+                                                    <li><FiCheck /> 외국인 사건</li>
+                                                    <li><FiCheck /> 형사 사건</li>
+                                                    <li><FiCheck /> 민사 사건</li>
+                                                    <li><FiCheck /> 행정 사건</li>
+                                                    <li><FiCheck /> 가사 사건</li>
                                                 </ul>
                                             </div>
                                             <div className="pricing-footer">
@@ -69,22 +69,22 @@ const Price = () => {
                                     <div className="rn-pricing style-5 active">
                                         <div className="pricing-table-inner">
                                             <div className="pricing-header">
-                                                <h4 className="title">Standard Plan</h4>
+                                                <h4 className="title">비자 상담</h4>
                                                 <div className="pricing">
                                                     <div className="price-wrapper">
                                                         <span className="currency">$</span>
-                                                        <span className="price">50</span>
+                                                        <span className="price">Free</span>
                                                     </div>
-                                                    <span className="subtitle">USD Per Month</span>
+                                                    <span className="subtitle">무료상담 가능</span>
                                                 </div>
                                             </div>
                                             <div className="pricing-body">
                                                 <ul className="list-style--1">
-                                                    <li><FiCheck /> 5 PPC Campaigns</li>
-                                                    <li><FiCheck /> Keep 100% Royalties</li>
-                                                    <li><FiCheck /> App Development</li>
-                                                    <li><FiCheck /> Seo Friendly</li>
-                                                    <li><FiCheck /> UI/UX designs</li>
+                                                    <li><FiCheck /> 일자리 비자</li>
+                                                    <li><FiCheck /> 유학 비자</li>
+                                                    <li><FiCheck /> 거주 비자</li>
+                                                    <li><FiCheck /> 투자 비자</li>
+                                                    <li><FiCheck /> 기타 비자</li>
                                                 </ul>
                                             </div>
                                             <div className="pricing-footer">
@@ -100,22 +100,22 @@ const Price = () => {
                                     <div className="rn-pricing style-5">
                                         <div className="pricing-table-inner">
                                             <div className="pricing-header">
-                                                <h4 className="title">Advanced Plan</h4>
+                                                <h4 className="title">파트너 상담</h4>
                                                 <div className="pricing">
                                                     <div className="price-wrapper">
                                                         <span className="currency">$</span>
-                                                        <span className="price">500</span>
+                                                        <span className="price">Free</span>
                                                     </div>
-                                                    <span className="subtitle">USD Per Month</span>
+                                                    <span className="subtitle">무료상담 가능</span>
                                                 </div>
                                             </div>
                                             <div className="pricing-body">
                                                 <ul className="list-style--1">
-                                                    <li><FiCheck /> 50 PPC Campaigns</li>
-                                                    <li><FiCheck /> SEO Marketing</li>
-                                                    <li><FiCheck /> Marketing Agency</li>
-                                                    <li><FiCheck /> Seo Friendly</li>
-                                                    <li><FiCheck /> Application Manage</li>
+                                                    <li><FiCheck /> 제안서 송부</li>
+                                                    <li><FiCheck /> 직원 채용</li>
+                                                    <li>.</li>
+                                                    <li>.</li>
+                                                    <li>.</li>
                                                 </ul>
                                             </div>
                                             <div className="pricing-footer">
