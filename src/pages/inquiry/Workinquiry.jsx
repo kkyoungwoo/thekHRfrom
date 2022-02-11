@@ -6,11 +6,12 @@ import BreadcrumbOne from "../../elements/breadcrumb/BreadcrumbOne";
 import SectionTitle from "../../elements/sectionTitle/SectionTitle";
 import AccordionJob from "../../elements/accordion/AccordionJob";
 import Separator from "../../elements/separator/Separator";
+import FooterThree from '../../common/footer/FooterThree';
 
 const Workinquiry = () => {
     return (
         <>
-            <SEO title="Accordion || Doob - React Business  Template" />
+            <SEO title="VISA Work inquiry" />
             <Layout>
                 <BreadcrumbOne 
                     title="외국인 구인,구직 서비스"
@@ -46,6 +47,7 @@ const Workinquiry = () => {
                     <Separator />
                     
                 </div>
+                <FooterThree />
             </Layout>
         </>
     )

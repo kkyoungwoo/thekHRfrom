@@ -34,7 +34,7 @@ const AboutTwo = () => {
                                     <ul className="list-icon">
                                         <li><span className="icon"><FiCheck /></span> 문제가 생기지 않도록 진행되는 비자발급 솔루션</li>
                                         <li><span className="icon"><FiCheck /></span> 상담에는 비용이 들어가지 않습니다.</li>
-                                        <li><span className="icon"><FiCheck /></span> 문의신청을 해주시면 순차적으로 답변 드립니다.</li>
+                                        <li><span className="icon"><FiCheck /></span> 문의내용을 온라인 접수 해주시면 순차적으로 답변 드립니다.</li>
                                     </ul>
                                 </ScrollAnimation>
                             </div>

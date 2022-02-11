@@ -4,32 +4,32 @@ import {Link} from "react-router-dom";
 import ScrollAnimation from "react-animate-on-scroll";
 
 const callToActionData = {
-    linkText: "/typeofvisa",
+    linkText: "/form",
     btnText: "비자 상담",
 }
 
 const callToActionData2 = {
-    linkText: "/typeofvisa",
+    linkText: "/form",
     btnText: "유학 상담",
 }
 
 const callToActionData3 = {
-    linkText: "/typeofvisa",
+    linkText: "/form",
     btnText: "출입국 상담",
 }
 
 const callToActionData4 = {
-    linkText: "/typeofvisa",
+    linkText: "/form",
     btnText: "소송 상담",
 }
 
 const callToActionData5 = {
-    linkText: "/typeofvisa",
+    linkText: "/form",
     btnText: "행정 상담",
 }
 
 const callToActionData6 = {
-    linkText: "/workinquiry",
+    linkText: "/form",
     btnText: "일자리 상담",
 }
 
@@ -174,7 +174,7 @@ const TabThree = () => {
                                                                         animateOut="fadeInOut"
                                                                         animateOnce={true}>
                                                                             <div className="call-to-btn text-center">
-                                                                                <a className="btn-default btn-icon" href={callToActionData.linkText}>{callToActionData.btnText} <i className="icon"></i></a>
+                                                                                <Link className="btn-default btn-icon" to={callToActionData.linkText}>{callToActionData.btnText} <i className="icon"></i></Link>
                                                                             </div>
                                                                         </ScrollAnimation>
                                                                     </div>
@@ -218,7 +218,7 @@ const TabThree = () => {
                                                                         animateOut="fadeInOut"
                                                                         animateOnce={true}>
                                                                             <div className="call-to-btn text-center">
-                                                                                <a className="btn-default btn-icon" href={callToActionData2.linkText}>{callToActionData2.btnText} <i className="icon"></i></a>
+                                                                                <Link className="btn-default btn-icon" to={callToActionData2.linkText}>{callToActionData2.btnText} <i className="icon"></i></Link>
                                                                             </div>
                                                                         </ScrollAnimation>
                                                                     </div>
@@ -262,7 +262,7 @@ const TabThree = () => {
                                                                         animateOut="fadeInOut"
                                                                         animateOnce={true}>
                                                                             <div className="call-to-btn text-center">
-                                                                                <a className="btn-default btn-icon" href={callToActionData3.linkText}>{callToActionData3.btnText} <i className="icon"></i></a>
+                                                                                <Link className="btn-default btn-icon" to={callToActionData3.linkText}>{callToActionData3.btnText} <i className="icon"></i></Link>
                                                                             </div>
                                                                         </ScrollAnimation>
                                                                     </div>
@@ -305,7 +305,7 @@ const TabThree = () => {
                                                                         animateOut="fadeInOut"
                                                                         animateOnce={true}>
                                                                             <div className="call-to-btn text-center">
-                                                                                <a className="btn-default btn-icon" href={callToActionData4.linkText}>{callToActionData4.btnText} <i className="icon"></i></a>
+                                                                                <Link className="btn-default btn-icon" to={callToActionData4.linkText}>{callToActionData4.btnText} <i className="icon"></i></Link>
                                                                             </div>
                                                                         </ScrollAnimation>
                                                                     </div>
@@ -348,7 +348,7 @@ const TabThree = () => {
                                                                         animateOut="fadeInOut"
                                                                         animateOnce={true}>
                                                                             <div className="call-to-btn text-center">
-                                                                                <a className="btn-default btn-icon" href={callToActionData5.linkText}>{callToActionData5.btnText} <i className="icon"></i></a>
+                                                                                <Link className="btn-default btn-icon" to={callToActionData5.linkText}>{callToActionData5.btnText} <i className="icon"></i></Link>
                                                                             </div>
                                                                         </ScrollAnimation>
                                                                     </div>
@@ -391,7 +391,7 @@ const TabThree = () => {
                                                                         animateOut="fadeInOut"
                                                                         animateOnce={true}>
                                                                             <div className="call-to-btn text-center">
-                                                                                <a className="btn-default btn-icon" href={callToActionData6.linkText}>{callToActionData6.btnText} <i className="icon"></i></a>
+                                                                                <Link className="btn-default btn-icon" to={callToActionData6.linkText}>{callToActionData6.btnText} <i className="icon"></i></Link>
                                                                             </div>
                                                                         </ScrollAnimation>
                                                                     </div>

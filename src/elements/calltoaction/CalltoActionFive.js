@@ -1,6 +1,7 @@
 import React from 'react';
 import ScrollAnimation from "react-animate-on-scroll";
 import { FiArrowRight } from "react-icons/fi";
+import {Link} from "react-router-dom";
 
 const callToActionData = {
     title: "비자를 만들 준비가 되셨나요?",
@@ -34,7 +35,7 @@ const CalltoActionFive = () => {
                                 animateOut="fadeInOut"
                                 animateOnce={true}>
                                     <div className="call-to-btn text-center">
-                                        <a className="btn-default btn-icon" href="/visainquiry">{callToActionData.btnText} <i className="icon"><FiArrowRight /></i></a>
+                                        <Link className="btn-default btn-icon" to="/form">{callToActionData.btnText} <i className="icon"><FiArrowRight /></i></Link>
                                     </div>
                                 </ScrollAnimation>
                             </div>

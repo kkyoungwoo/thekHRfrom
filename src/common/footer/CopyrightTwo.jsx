@@ -1,5 +1,4 @@
 import React from 'react';
-import { FiFacebook, FiTwitter, FiInstagram, FiLinkedin } from "react-icons/fi";
 import {Link} from "react-router-dom";
 
 const CopyrightTwo = () => {
@@ -10,9 +9,9 @@ const CopyrightTwo = () => {
                     <div className="col-lg-4 col-md-7 col-sm-12 col-12">
                         <div className="copyright-left">
                             <ul className="ft-menu link-hover">
-                                <li><a href="/Price">요금</a></li>
-                                <li><a href="/Visainquiry">비자 문의</a></li>
-                                <li><a target="_blank" href="https://thekvisa.com" rel="noopener noreferrer">일자리 문의</a></li>
+                                <li><Link to="/Price">요금</Link></li>
+                                <li><Link to="/Visainquiry">비자 문의</Link></li>
+                                <li><Link to="/workinquiry">일자리 문의</Link></li>
                                 <li><a target="_blank" href="https://thekvisa.com/visaform" rel="noopener noreferrer">파트너십</a></li>
                             </ul>
                         </div>
@@ -27,11 +26,6 @@ const CopyrightTwo = () => {
                             </ul>
                         </div>
                     </div>*/}
-                    <div className="col-lg-4 col-md-12 col-sm-12 col-12 mt_md--20 mt_sm--20">
-                        <div className="copyright-right text-center text-lg-right">
-                            <p className="copyright-text">Copyright All rights reserved © {new Date().getFullYear()} THE K</p>
-                        </div>
-                    </div>
                 </div>
             </div>
         </div>

@@ -49,6 +49,7 @@ import Agencyinquiry from "./pages/inquiry/Agencyinquiry";
 import Price from "./pages/inquiry/Price";
 import Paidinquiry from "./pages/inquiry/Paidinquiry";
 
+import Form from "./pages/form/Form";
 
 // Import Css Here 
 import './assets/scss/style.scss';
@@ -94,8 +95,6 @@ const App = () => {
                     <Route path={`${process.env.PUBLIC_URL + "/Price"}`} exact component={Price}/>                    
                     <Route path={`${process.env.PUBLIC_URL + "/paidinquiry"}`} exact component={Paidinquiry}/>
 
-
-
                     <Route path={`${process.env.PUBLIC_URL + "/international-consulting"}`} exact component={InternationalConsulting}/>
                     <Route path={`${process.env.PUBLIC_URL + "/corporate"}`} exact component={Corporate}/>
                     <Route path={`${process.env.PUBLIC_URL + "/business"}`} exact component={Business}/>
@@ -111,6 +110,9 @@ const App = () => {
                     <Route path={`${process.env.PUBLIC_URL + "/portfolio-grid-layout"}`} exact component={PortfolioGrid}/>
                     <Route path={`${process.env.PUBLIC_URL + "/portfolio-box-layout"}`} exact component={PortfolioBoxLayout}/>
                     <Route path={`${process.env.PUBLIC_URL + "/employmentvisa/:id"}`} exact component={PortfolioDetails}/>
+
+                    <Route path={`${process.env.PUBLIC_URL + "/form"}`} exact component={Form}/>
+
                     <Route path="*" component={Error} exact />
 
                 </Switch>

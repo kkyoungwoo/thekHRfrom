@@ -22,7 +22,7 @@ var BlogListData = BlogClassicData.slice(0, 3);
 const Introduction = () => {
     return (
         <>
-            <SEO title="Business" />
+            <SEO title="korea VISA About us" />
             <Layout>
                 <main className="page-wrapper">
                     {/* Start Slider Area  */}

@@ -7,6 +7,7 @@ import SectionTitle from "../../elements/sectionTitle/SectionTitle";
 import ServiceOne from "../../elements/service/ServiceOne";
 import { FiArrowRight } from "react-icons/fi";
 
+import {Link} from "react-router-dom";
 
 import BreadcrumbOne from "../../elements/breadcrumb/BreadcrumbOne";
 
@@ -64,7 +65,7 @@ const TimelineData = [
         date: "Step-2",
         title: "국내거주 외국인",
         description: "국내에서 대학교 신입학 및 편입학을 진행할 수 있습니다.",
-        image: "blog-02",
+        image: "blog-04",
         workingStep: [
             {
                 stepTitle: "D-2 대학교 (신입학, 편입학)",
@@ -91,7 +92,7 @@ const Entrance = () => {
 
     return (
         <>
-            <SEO title="Portfolio Three Column || Doob - React Business  Template" />
+            <SEO title="International student" />
             <Layout>
                 <div className="main-content">
                     <div className="rwt-portfolio-area rn-section-gap">
@@ -252,7 +253,7 @@ const Entrance = () => {
                                                                 animateOut="fadeInOut"
                                                                 animateOnce={true}>
                                                                     <div className="call-to-btn text-center">
-                                                                        <a className="btn-default btn-icon" href="/visainquiry">{callToActionData.btnText} <i className="icon"><FiArrowRight /></i></a>
+                                                                        <Link className="btn-default btn-icon" to="/form">{callToActionData.btnText} <i className="icon"><FiArrowRight /></i></Link>
                                                                     </div>
                                                                 </ScrollAnimation>
                                                             </div>

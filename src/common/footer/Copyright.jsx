@@ -1,4 +1,5 @@
 import React from 'react'
+import {Link} from "react-router-dom";
 
 const Copyright = () => {
     return (
@@ -8,9 +9,9 @@ const Copyright = () => {
                     <div className="col-lg-6 col-md-8 col-sm-12 col-12">
                         <div className="copyright-left">
                             <ul className="ft-menu link-hover">
-                                <li><a href="/Price">요금</a></li>
-                                <li><a href="/Visainquiry">비자 문의</a></li>
-                                <li><a target="_blank" href="/workinquiry">일자리 문의</a></li>
+                                <li><Link to="/price">요금</Link></li>
+                                <li><Link to="/visainquiry">비자 문의</Link></li>
+                                <li><Link to="/workinquiry">일자리 문의</Link></li>
                                 <li><a target="_blank" href="https://thekvisa.com/visaform" rel="noopener noreferrer">파트너십</a></li>
                             </ul>
                                 <ul className="ft-menu">
@@ -21,11 +22,6 @@ const Copyright = () => {
                                     <li style={{fontSize:"12px"}}>사업자등록번호 : 658-74-00358</li>
                                     <li style={{fontSize:"12px"}}>유료직업소개서 신고번호 : 제 대구-동-유-22-2 호</li>
                                 </ul>
-                        </div>
-                    </div>
-                    <div className="col-lg-6 col-md-4 col-sm-12 col-12">
-                        <div className="copyright-right text-center text-md-right">
-                            <p className="copyright-text">© THE K {new Date().getFullYear()}</p>
                         </div>
                     </div>
                 </div>

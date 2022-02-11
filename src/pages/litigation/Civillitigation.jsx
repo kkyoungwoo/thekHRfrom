@@ -5,6 +5,7 @@ import BreadcrumbOne from "../../elements/breadcrumb/BreadcrumbOne";
 import CountUp from 'react-countup';
 import TrackVisibility from "react-on-screen";
 import CounterUpThree from '../../elements/counterup/CounterUpThree';
+import FooterThree from '../../common/footer/FooterThree';
 
 import { useHistory } from 'react-router-dom'
 
@@ -46,7 +47,7 @@ const Data =
         "subtitle": "진행 가능한 민사 업무",
         "body": ["<p>1. 채권자대위, 채권자취소소송<br/>2. 손해배상소송<br/>3.각종 부동산 소송, 청구이의, 배당이의소송 및 집행정지<br/>4. 건설공사 및 용역대금 소송<br/>5. 종중소송<br/>6. 대여금 및 투자금 소송<br/>7. 그 외 각종 재심 및 추완항소</p>"],
 
-        "largeImage": "images/portfolio/portfolio-05.jpg"
+        "largeImage": "images/portfolio/portfolio-08.jpg"
         
     }
 
@@ -67,7 +68,7 @@ const Civillitigation = () => {
 
     return (
         <>
-            <SEO title="Portfolio Three Column || Doob - React Business  Template" />
+            <SEO title="civillitigation" />
             <Layout>
                 <div className="rwt-portfolio-details rn-section-gap">
                     {/**cards start */}
@@ -143,6 +144,7 @@ const Civillitigation = () => {
                         </div>
                     </div>
                 </div>
+                <FooterThree />
             </Layout>
         </>
     )

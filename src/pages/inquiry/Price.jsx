@@ -4,11 +4,12 @@ import Layout from "../../common/Layout";
 import BreadcrumbOne from "../../elements/breadcrumb/BreadcrumbOne";
 import SectionTitle from "../../elements/sectionTitle/SectionTitle";
 import { FiCheck } from "react-icons/fi";
+import {Link} from "react-router-dom";
 
 const Price = () => {
     return (
         <>
-            <SEO title="Portfolio Three Column || Doob - React Business  Template" />
+            <SEO title="Visa Price" />
             <Layout>
                 <BreadcrumbOne 
                     title="요금 안내"
@@ -57,7 +58,7 @@ const Price = () => {
                                                 </ul>
                                             </div>
                                             <div className="pricing-footer">
-                                                <a className="btn-default btn-border" href="#pricing">대행 신청</a>
+                                                <Link className="btn-default btn-border" to="/form">대행 신청</Link>
                                             </div>
                                         </div>
                                     </div>
@@ -88,7 +89,7 @@ const Price = () => {
                                                 </ul>
                                             </div>
                                             <div className="pricing-footer">
-                                                <a className="btn-default" href="/paidinquiry">상담 신청</a>
+                                                <Link className="btn-default" to="/form">상담 신청</Link>
                                             </div>
                                         </div>
                                     </div>
@@ -114,12 +115,12 @@ const Price = () => {
                                                     <li><FiCheck /> 공장,농장</li>
                                                     <li><FiCheck /> 사무직</li>
                                                     <li><FiCheck /> E-7</li>
+                                                    <li><FiCheck /> 프리랜서</li>
                                                     <li>.</li>
-                                                    <li>프리랜서 지원</li>
                                                 </ul>
                                             </div>
                                             <div className="pricing-footer">
-                                                <a className="btn-default btn-border" href="https://thekvisa.com/foreigner" target='_black' rel="noopener noreferrer">바로가기</a>
+                                                <Link className="btn-default btn-border" to="/form">안내 받기</Link>
                                             </div>
                                         </div>
                                     </div>

@@ -15,12 +15,13 @@ import Separator from "../../elements/separator/Separator";
 import TeamFour from '../../elements/team/TeamFour';
 import PricingTwo from '../../elements/pricing/PricingTwo';
 import CalltoActionFive from '../../elements/calltoaction/CalltoActionFive';
+import FooterThree from '../../common/footer/FooterThree';
 
 
 const Purchasedata = () => {
     return (
         <>
-            <SEO title="Corporate" />
+            <SEO title="VISA Purchasedata" />
             <main className="page-wrapper">
                 
                 <div className="header-transparent-with-topbar">

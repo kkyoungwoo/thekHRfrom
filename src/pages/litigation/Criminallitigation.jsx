@@ -5,6 +5,7 @@ import BreadcrumbOne from "../../elements/breadcrumb/BreadcrumbOne";
 import CountUp from 'react-countup';
 import TrackVisibility from "react-on-screen";
 import CounterUpTwo from '../../elements/counterup/CounterUpTwo';
+import FooterThree from '../../common/footer/FooterThree';
 
 import { useHistory } from 'react-router-dom'
 
@@ -67,7 +68,7 @@ const Criminallitigation = () => {
 
     return (
         <>
-            <SEO title="Portfolio Three Column || Doob - React Business  Template" />
+            <SEO title="criminallitigation" />
             <Layout>
                 <div className="rwt-portfolio-details rn-section-gap">
                     {/**cards start */}
@@ -143,6 +144,7 @@ const Criminallitigation = () => {
                         </div>
                     </div>
                 </div>
+                <FooterThree />
             </Layout>
         </>
     )

@@ -3,6 +3,7 @@ import SEO from "../../common/SEO";
 import Layout from "../../common/Layout";
 import BreadcrumbOne from "../../elements/breadcrumb/BreadcrumbOne";
 import { useHistory } from 'react-router-dom'
+import FooterThree from '../../common/footer/FooterThree';
 
 const filters = [
     {
@@ -66,7 +67,7 @@ const Immigrationlitigation = () => {
 
     return (
         <>
-            <SEO title="Portfolio Three Column || Doob - React Business  Template" />
+            <SEO title="Immigrationlitigation" />
             <Layout>
                 <div className="rwt-portfolio-details rn-section-gap">
                     {/**cards start */}
@@ -145,6 +146,7 @@ const Immigrationlitigation = () => {
                         </div>
                     </div>
                 </div>
+                <FooterThree />
             </Layout>
         </>
     )

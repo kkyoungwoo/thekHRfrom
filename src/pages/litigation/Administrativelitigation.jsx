@@ -5,6 +5,7 @@ import BreadcrumbOne from "../../elements/breadcrumb/BreadcrumbOne";
 import CountUp from 'react-countup';
 import TrackVisibility from "react-on-screen";
 import CounterUpFive from '../../elements/counterup/CounterUpFive';
+import FooterThree from '../../common/footer/FooterThree';
 
 import { useHistory } from 'react-router-dom'
 
@@ -46,7 +47,7 @@ const Data =
         "subtitle": "진행 가능한 행정 업무",
         "body": ["<p>1. 운전면허 관련 구제<br/>(1-1) 단순음주<br/>(1-2) 음주사고<br/>2. 국가 보훈 (장애 여부)<br/>3. 영업정지 과징금 해결<br/>4. 내용증명<br/>5. 토지보상금 증액<br/>6. 학교폭력구제<br/>7. 협회설립 / 민간자격<br/>8. 외국인초청 / 비자변경<br/>9. 국제결혼서류 대행<br/>10. 사실조사 및 증거수집<br/>11. 사람 찾기<br/>12. 녹취록 등 민원서류<br/>13. 기타 문제 행정사 직접 상담</p>"],
 
-        "largeImage": "images/portfolio/portfolio-05.jpg"
+        "largeImage": "images/portfolio/portfolio-07.jpg"
 
     }
 
@@ -67,7 +68,7 @@ const Administrativelitigation = () => {
 
     return (
         <>
-            <SEO title="Portfolio Three Column || Doob - React Business  Template" />
+            <SEO title="administrativelitigation" />
             <Layout>
                 <div className="rwt-portfolio-details rn-section-gap">
                     {/**cards start */}
@@ -143,6 +144,7 @@ const Administrativelitigation = () => {
                         </div>
                     </div>
                 </div>
+                <FooterThree />
             </Layout>
         </>
     )

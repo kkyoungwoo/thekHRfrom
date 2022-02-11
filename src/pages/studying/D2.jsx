@@ -9,6 +9,8 @@ import { FiArrowRight } from "react-icons/fi";
 
 import { useHistory } from 'react-router-dom'
 
+import {Link} from "react-router-dom";
+
 const filters = [
     {
       id: 1,
@@ -43,7 +45,7 @@ const TimelineData = [
         date: "Step-1",
         title: "해외거주 외국인",
         description: "학사,석사,박사 학위를 위해 한국에서 공부할 수 있습니다.",
-        image: "timeline-01",
+        image: "timeline-02",
         workingStep: [
             {
                 stepTitle: "신입학",
@@ -74,7 +76,7 @@ const D2 = () => {
 
     return (
         <>
-            <SEO title="Portfolio Three Column || Doob - React Business  Template" />
+            <SEO title="d2 visa" />
             <Layout>
                 <div className="main-content">
                     <div className="rwt-portfolio-area rn-section-gap">
@@ -229,7 +231,7 @@ const D2 = () => {
                                                                 animateOut="fadeInOut"
                                                                 animateOnce={true}>
                                                                     <div className="call-to-btn text-center">
-                                                                        <a className="btn-default btn-icon" href="/visainquiry">{callToActionData.btnText} <i className="icon"><FiArrowRight /></i></a>
+                                                                        <Link className="btn-default btn-icon" to="/form" >{callToActionData.btnText} <i className="icon"><FiArrowRight /></i></Link>
                                                                     </div>
                                                                 </ScrollAnimation>
                                                             </div>

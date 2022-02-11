@@ -9,7 +9,6 @@ const FooterThree = () => {
         <>
             <div className="footer-style-2">
                 <CalltoActionEight />
-                <CopyrightTwo />
             </div>
             <ScrollTop />
         </>

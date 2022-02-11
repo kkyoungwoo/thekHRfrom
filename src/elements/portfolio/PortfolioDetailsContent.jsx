@@ -3,6 +3,7 @@ import PortfolioItem from "./PortfolioItem";
 import PortfolioOne from "./PortfolioOne";
 import SectionTitle from "../sectionTitle/SectionTitle";
 import PortfolioData from "../../data/portfolio/PortfolioData.json";
+import FooterThree from '../../common/footer/FooterThree';
 
 const filters = [
     {
@@ -121,7 +122,6 @@ const PortfolioDetailsContent = ({ data }) => {
                             </div>
                         </div>
                         
-                        
                         {/**하단 비자 종류 */}
                         <div className="main-content">
                             <div className="rwt-portfolio-area rn-section-gap">
@@ -131,8 +131,8 @@ const PortfolioDetailsContent = ({ data }) => {
                                                 <SectionTitle
                                                     textAlign = "text-center"
                                                     radiusRounded = ""
-                                                    subtitle = "Portfolio Three Column"
-                                                    title = "You can customize everything!"
+                                                    subtitle = "한국 체류 비자 솔루션 제공"
+                                                    title = "원하는 비자를 선택해 주세요"
                                                     description = ""
                                                 />
                                         </div>
@@ -174,6 +174,7 @@ const PortfolioDetailsContent = ({ data }) => {
                     </div>
                 </div>
             </div>
+            <FooterThree />
         </div>
     )
 }

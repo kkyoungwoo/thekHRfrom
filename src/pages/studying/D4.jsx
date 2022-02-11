@@ -9,6 +9,8 @@ import { FiArrowRight } from "react-icons/fi";
 
 import { useHistory } from 'react-router-dom'
 
+import {Link} from "react-router-dom";
+
 const filters = [
     {
       id: 1,
@@ -74,7 +76,7 @@ const D4 = () => {
 
     return (
         <>
-            <SEO title="Portfolio Three Column || Doob - React Business  Template" />
+            <SEO title="d4 visa" />
             <Layout>
                 <div className="main-content">
                     <div className="rwt-portfolio-area rn-section-gap">
@@ -229,7 +231,7 @@ const D4 = () => {
                                                                 animateOut="fadeInOut"
                                                                 animateOnce={true}>
                                                                     <div className="call-to-btn text-center">
-                                                                        <a className="btn-default btn-icon" href="/visainquiry">{callToActionData.btnText} <i className="icon"><FiArrowRight /></i></a>
+                                                                        <Link className="btn-default btn-icon" to="/form">{callToActionData.btnText} <i className="icon"><FiArrowRight /></i></Link>
                                                                     </div>
                                                                 </ScrollAnimation>
                                                             </div>

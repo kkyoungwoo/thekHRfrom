@@ -1,9 +1,11 @@
 import React from 'react';
 import { FiArrowRight } from "react-icons/fi";
+import {Link} from "react-router-dom";
+
 const callToActionData = {
-    title: "비자를 발급할 준비가 되었나요?",
-    subtitle: "더 쉽고 더 빠르게 비자를 발급하세요",
-    btnText: "비자 문의",
+    title: "온라인 상담 신청",
+    subtitle: "쉽고 빠르게 상담을 진행하세요",
+    btnText: "문의",
 }
 
 const CalltoActionEight = () => {
@@ -17,7 +19,7 @@ const CalltoActionEight = () => {
                                 <h2 className="title">{callToActionData.title}</h2>
                                 <h6 className="subtitle">{callToActionData.subtitle}</h6>
                                 <div className="call-to-btn text-center mt--30">
-                                    <a className="btn-default btn-icon" target="_blank" href="/paidinquiry">{callToActionData.btnText} <i className="icon"><FiArrowRight /></i></a>
+                                    <Link className="btn-default btn-icon" to="/form">{callToActionData.btnText} <i className="icon"><FiArrowRight /></i></Link>
                                 </div>
                             </div>
                         </div>

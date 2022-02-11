@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import SEO from "../../common/SEO";
 import Layout from "../../common/Layout";
+import FooterThree from '../../common/footer/FooterThree';
 
 import { useHistory } from 'react-router-dom'
 
@@ -107,7 +108,7 @@ const Parentalregistration = () => {
 
     return (
         <>
-            <SEO title="Portfolio Three Column || Doob - React Business  Template" />
+            <SEO title="parentalregistration" />
             <Layout>
                 <div className="rwt-portfolio-details rn-section-gap">
                     {/**cards start */}
@@ -206,6 +207,7 @@ const Parentalregistration = () => {
                         </div>
                     </div>
                 </div>
+                <FooterThree />
             </Layout>
         </>
     )

@@ -2,9 +2,9 @@ import React from 'react';
 import SEO from "../../common/SEO";
 import Layout from "../../common/Layout";
 import SectionTitle from "../../elements/sectionTitle/SectionTitle";
-import PortfolioOne from "../../elements/portfolio/PortfolioOne";
+import BreadcrumbOne from "../../elements/breadcrumb/BreadcrumbOne";
 
-const Typeofvisa = () => {
+const Form = () => {
     return (
         <>
             <SEO title="korea visa" />
@@ -17,13 +17,20 @@ const Typeofvisa = () => {
                                         <SectionTitle
                                             textAlign = "text-center"
                                             radiusRounded = ""
-                                            subtitle = "비자발급 안내 문서"
-                                            title = "한국 체류 비자 솔루션 제공"
+                                            subtitle = "온라인 상담센터"
+                                            title = "문의 내용을 선택하여 작성해주세요"
                                             description = ""
                                         />
                                 </div>
                             </div>
-                            <PortfolioOne  Column="col-lg-4 col-md-6 mt--30 box-grid-layout no-overlay" />
+                            <BreadcrumbOne
+                                rootUrl="/"
+                                parentUrl="Home"
+                                currentUrl="<<버튼 클릭시 홈화면으로 이동>>"
+                            />
+                            <div>
+                                hellow
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -31,4 +38,4 @@ const Typeofvisa = () => {
         </>
     )
 }
-export default Typeofvisa;
+export default Form;

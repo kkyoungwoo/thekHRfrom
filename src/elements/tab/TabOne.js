@@ -18,7 +18,7 @@ const TabOne = () => {
                                                 <Tab>
                                                     <div className="rn-tab-button">
                                                         <button>THE K 인사말</button>
-                                                    </div>   
+                                                    </div>
                                                 </Tab>
                                                 <Tab>
                                                     <div className="rn-tab-button">

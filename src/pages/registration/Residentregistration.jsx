@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import SEO from "../../common/SEO";
 import Layout from "../../common/Layout";
+import FooterThree from '../../common/footer/FooterThree';
 
 import { useHistory } from 'react-router-dom'
 
@@ -102,7 +103,7 @@ const Residentregistration = () => {
     },[activeFilter])
     return (
         <>
-            <SEO title="Portfolio Three Column || Doob - React Business  Template" />
+            <SEO title="residentregistration" />
             <Layout>
                 <div className="rwt-portfolio-details rn-section-gap">
                     {/**cards start */}
@@ -198,6 +199,7 @@ const Residentregistration = () => {
                         </div>
                     </div>
                 </div>
+                <FooterThree />
             </Layout>
         </>
     )

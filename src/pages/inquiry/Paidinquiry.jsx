@@ -15,12 +15,13 @@ import Separator from "../../elements/separator/Separator";
 import TeamFour from '../../elements/team/TeamFour';
 import PricingTwo from '../../elements/pricing/PricingTwo';
 import CalltoActionFive from '../../elements/calltoaction/CalltoActionFive';
+import FooterThree from '../../common/footer/FooterThree';
 
 
 const Paidinquiry = () => {
     return (
         <>
-            <SEO title="Corporate" />
+            <SEO title="VISA Paidinquiry" />
             <main className="page-wrapper">
                 
                 <div className="header-transparent-with-topbar">
@@ -31,13 +32,7 @@ const Paidinquiry = () => {
 
                 <Separator />
 
-                {/* Start Call To Action Area  */}
-                <div className="rwt-callto-action-area rn-section-gapBottom">
-                    <div className="wrapper">
-                        <CalltoActionFive />
-                    </div>
-                </div>
-                {/* End Call To Action Area  */}
+                <FooterThree />
 
                 <FooterOne />
                 <Copyright />

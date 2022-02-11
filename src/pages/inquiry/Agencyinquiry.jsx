@@ -3,6 +3,7 @@ import SEO from "../../common/SEO";
 import Layout from "../../common/Layout";
 import BreadcrumbOne from "../../elements/breadcrumb/BreadcrumbOne";
 import { useHistory } from 'react-router-dom'
+import FooterThree from '../../common/footer/FooterThree';
 
 const filters = [
     {
@@ -82,7 +83,7 @@ const Agencyinquiry = () => {
 
     return (
         <>
-            <SEO title="Portfolio Three Column || Doob - React Business  Template" />
+            <SEO title="VISA agencyinquiry" />
             <Layout>
                 <BreadcrumbOne 
                     title="위임 / 대행"
@@ -160,6 +161,7 @@ const Agencyinquiry = () => {
                         </div>
                     </div>
                 </div>
+                <FooterThree />
             </Layout>
         </>
     )

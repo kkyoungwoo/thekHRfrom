@@ -120,7 +120,6 @@ const PortfolioOne = ({ Column }) => {
                     </div>
                 ))}
             </div>
-
             {/*<div className="row row--15">
                 <div className="col-lg-12">
                     <div className="rwt-load-more text-center mt--50">

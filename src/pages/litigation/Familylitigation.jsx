@@ -5,6 +5,7 @@ import BreadcrumbOne from "../../elements/breadcrumb/BreadcrumbOne";
 import CountUp from 'react-countup';
 import TrackVisibility from "react-on-screen";
 import CounterUpFour from '../../elements/counterup/CounterUpFour';
+import FooterThree from '../../common/footer/FooterThree';
 
 import { useHistory } from 'react-router-dom'
 
@@ -46,7 +47,7 @@ const Data =
         "subtitle": "진행 가능한 가사 업무",
         "body": ["<p>1. 협의이혼<br/>2. 재판상 이혼<br/>(2-1) 친권 및 양육권<br/>(2-2) 양육비<br/>(2-3) 위자료<br/>(2-4) 재산분할<br/>(2-5) 친권양육권<br/>3. 혼인의 무효 또는 취소<br/>4. 친생자관계존부<br/>5. 사실혼 해소</p>"],
 
-        "largeImage": "images/portfolio/portfolio-05.jpg"
+        "largeImage": "images/portfolio/portfolio-06.jpg"
         
     }
 
@@ -67,7 +68,7 @@ const Familylitigation = () => {
 
     return (
         <>
-            <SEO title="Portfolio Three Column || Doob - React Business  Template" />
+            <SEO title="familylitigation" />
             <Layout>
                 <div className="rwt-portfolio-details rn-section-gap">
                     {/**cards start */}
@@ -143,6 +144,7 @@ const Familylitigation = () => {
                         </div>
                     </div>
                 </div>
+                <FooterThree />
             </Layout>
         </>
     )
