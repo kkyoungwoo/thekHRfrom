@@ -38,26 +38,26 @@ const Price = () => {
                                     <div className="rn-pricing style-5">
                                         <div className="pricing-table-inner">
                                             <div className="pricing-header">
-                                                <h4 className="title">사건 상담</h4>
+                                                <h4 className="title">출입국 업무 위임 / 대행</h4>
                                                 <div className="pricing">
                                                     <div className="price-wrapper">
-                                                        <span className="currency">$</span>
-                                                        <span className="price">Free</span>
+                                                        <span className="currency"></span>
+                                                        <span className="price">2만원 ~</span>
                                                     </div>
                                                     <span className="subtitle">무료상담 가능</span>
                                                 </div>
                                             </div>
                                             <div className="pricing-body">
                                                 <ul className="list-style--1">
-                                                    <li><FiCheck /> 외국인 사건</li>
-                                                    <li><FiCheck /> 형사 사건</li>
-                                                    <li><FiCheck /> 민사 사건</li>
-                                                    <li><FiCheck /> 행정 사건</li>
-                                                    <li><FiCheck /> 가사 사건</li>
+                                                    <li><FiCheck /> 서류 접수</li>
+                                                    <li><FiCheck /> 서류 발급</li>
+                                                    <li><FiCheck /> 번호표 발급</li>
+                                                    <li>.</li>
+                                                    <li>.</li>
                                                 </ul>
                                             </div>
                                             <div className="pricing-footer">
-                                                <a className="btn-default btn-border" href="#pricing">Purchase Now</a>
+                                                <a className="btn-default btn-border" href="#pricing">대행 신청</a>
                                             </div>
                                         </div>
                                     </div>
@@ -72,7 +72,7 @@ const Price = () => {
                                                 <h4 className="title">비자 상담</h4>
                                                 <div className="pricing">
                                                     <div className="price-wrapper">
-                                                        <span className="currency">$</span>
+                                                        <span className="currency"></span>
                                                         <span className="price">Free</span>
                                                     </div>
                                                     <span className="subtitle">무료상담 가능</span>
@@ -88,7 +88,7 @@ const Price = () => {
                                                 </ul>
                                             </div>
                                             <div className="pricing-footer">
-                                                <a className="btn-default" href="#pricing">Purchase Now</a>
+                                                <a className="btn-default" href="/paidinquiry">상담 신청</a>
                                             </div>
                                         </div>
                                     </div>
@@ -100,26 +100,26 @@ const Price = () => {
                                     <div className="rn-pricing style-5">
                                         <div className="pricing-table-inner">
                                             <div className="pricing-header">
-                                                <h4 className="title">파트너 상담</h4>
+                                                <h4 className="title">일자리 소개</h4>
                                                 <div className="pricing">
                                                     <div className="price-wrapper">
-                                                        <span className="currency">$</span>
-                                                        <span className="price">Free</span>
+                                                        <span className="currency"></span>
+                                                        <span className="price">15만원 ~</span>
                                                     </div>
                                                     <span className="subtitle">무료상담 가능</span>
                                                 </div>
                                             </div>
                                             <div className="pricing-body">
                                                 <ul className="list-style--1">
-                                                    <li><FiCheck /> 제안서 송부</li>
-                                                    <li><FiCheck /> 직원 채용</li>
+                                                    <li><FiCheck /> 공장,농장</li>
+                                                    <li><FiCheck /> 사무직</li>
+                                                    <li><FiCheck /> E-7</li>
                                                     <li>.</li>
-                                                    <li>.</li>
-                                                    <li>.</li>
+                                                    <li>프리랜서 지원</li>
                                                 </ul>
                                             </div>
                                             <div className="pricing-footer">
-                                                <a className="btn-default btn-border" href="#pricing">Purchase Now</a>
+                                                <a className="btn-default btn-border" href="https://thekvisa.com/foreigner" target='_black' rel="noopener noreferrer">바로가기</a>
                                             </div>
                                         </div>
                                     </div>

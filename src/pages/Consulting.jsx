@@ -14,6 +14,8 @@ import FooterOne from '../common/footer/FooterOne';
 import Copyright from '../common/footer/Copyright';
 
 import CalltoActionOne from "../elements/calltoaction/CalltoActionOne";
+import ScrollAnimation from "react-animate-on-scroll"
+
 
 const Consulting = () => {
     return (
@@ -28,8 +30,15 @@ const Consulting = () => {
                         <div className="row">
                             <div className="col-lg-8 col-xl-6">
                                 <div className="inner text-left">
-                                    <h1 className="title display-one">비자발급에는 <br /> 계획과 실력이 <br /> 아주 중요합니다</h1>
-                                    <h6 className="tag-title">SOLUTION FOR YOUR VISA ISSUANCE</h6>
+                                    <h6 className="title display-one">
+                                        <ScrollAnimation 
+                                            animateIn="fadeInUp"
+                                            animateOut="fadeInOut"
+                                            animateOnce={true}>
+                                                <span style={{color:"#059DFF"}}>외국인</span>을 위한<br/><strong style={{color:"#059DFF"}}>서류 대행</strong>부터<br/><strong style={{color:"#059DFF"}}>비자 발급</strong>까지
+                                            </ScrollAnimation>
+                                    </h6>
+                                    <h6 className="tag-title">The best solution for visa issuance</h6>
                                 </div>
                             </div>
                         </div>
@@ -70,7 +79,7 @@ const Consulting = () => {
                                     textAlign = "text-center"
                                     radiusRounded = ""
                                     subtitle = "Consulting Report"
-                                    title = "Report Our Consulting Business."
+                                    title = "해결된 사례의 요약"
                                     description = ""
                                 />
                             </div>

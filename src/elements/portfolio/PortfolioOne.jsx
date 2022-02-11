@@ -63,8 +63,7 @@ const PortfolioOne = ({ Column }) => {
         } else {
           tempData = getAllItems.filter(
             (data) =>
-              data.category === e.target.className &&
-              data.id <= dataVisibleCount
+              data.category === e.target.className
           );
         }
         setVisibleItems(tempData);

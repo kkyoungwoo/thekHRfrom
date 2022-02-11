@@ -2,9 +2,8 @@ import React from 'react';
 import ScrollAnimation from "react-animate-on-scroll";
 
 const callToActionData = {
-    title: "Ready to start creating a standard website?",
-    subtitle: "Finest choice for your home & office",
-    btnText: "Purchase Doob",
+    title: "높은 성공률",
+    subtitle: "누구나 비자를 신청할 수 있지만, 모든 사람이 비자를 발급받는 것은 아닙니다."
 }
 
 const CalltoActionOne = () => {
@@ -27,15 +26,6 @@ const CalltoActionOne = () => {
                                 animateOut="fadeInOut"
                                 animateOnce={true}>
                                     <h6 className="subtitle">{callToActionData.subtitle}</h6>
-                                </ScrollAnimation>
-
-                                <ScrollAnimation 
-                                animateIn="fadeInUp"
-                                animateOut="fadeInOut"
-                                animateOnce={true}>
-                                    <div className="call-to-btn">
-                                        <a className="btn-default" href="#">{callToActionData.btnText}</a>
-                                    </div>
                                 </ScrollAnimation>
                             </div>
                         </div>

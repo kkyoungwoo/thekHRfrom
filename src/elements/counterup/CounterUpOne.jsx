@@ -4,20 +4,20 @@ import TrackVisibility from "react-on-screen";
 
 const Data = [
     {
-        countNum : 500,
-        countTitle: '행복한 의뢰인',
+        countNum : 1000,
+        countTitle: '의뢰인',
     },
     {
         countNum : 100,
         countTitle: '소개받은 의뢰인',
     },
     {
-        countNum : 50,
+        countNum : 100,
         countTitle: '재방문 의뢰인',
     },
     {
-        countNum : 5,
-        countTitle: '협력업체',
+        countNum : 10,
+        countTitle: '파트너',
     },
 ];
 const CounterUpOne = ({textALign, counterStyle, column}) => {

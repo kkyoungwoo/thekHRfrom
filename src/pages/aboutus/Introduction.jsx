@@ -31,11 +31,8 @@ const Introduction = () => {
                             <div className="row row--30 align-items-center">
                                 <div className="order-2 order-lg-1 col-lg-7 mt_md--50 mt_sm--50 mt_lg--30">
                                     <div className="inner text-left">
-                                        <h1 className="title theme-gradient">Trending <br />Business</h1>
-                                        <p className="description">We help our clients succeed by creating brand identities, digital experiences, and print materials.</p>
-                                        <div className="button-group mt--30 mt_sm--20">
-                                            <a className="btn-default btn-medium btn-icon" target="_blank" href="https://themeforest.net/checkout/from_item/33571911?license=regular">Purchase Now <i className="icon"><FiArrowRight /></i></a>
-                                        </div>
+                                        <h1 className="title theme-gradient">외국인 비자<br />컨설팅<br />전문회사</h1>
+                                        <p className="description">가장 가능성이 높은 방법으로 어려운 외국인의 비자 발급 및 시간이 많이 걸리는 행정업무를 대행 및 위임하여 의뢰인의 시간과 비용을 단축 시켜 드리고 있습니다.</p>
                                     </div>
                                 </div>
                                 <div className="order-1 order-lg-2 col-lg-5">
@@ -59,8 +56,8 @@ const Introduction = () => {
                                         textAlign = "text-center"
                                         radiusRounded = ""
                                         subtitle = "Companies About."
-                                        title = "What About Our Companies."
-                                        description = "We help our clients succeed by creating brand identities, <br /> digital experiences, and print materials."
+                                        title = "THE K 컨설팅을 소개합니다."
+                                        description = "우리는 고객들이 많은 경험과 체계적인 방법으로 비자를 발급할 수 있도록 도와드리고 있습니다."
                                     />
                                 </div>
                             </div>
@@ -78,8 +75,8 @@ const Introduction = () => {
                                             textAlign = "text-center"
                                             radiusRounded = ""
                                             subtitle = "Timeline"
-                                            title = "Working Process."
-                                            description = "We help our clients succeed by creating brand identities, <br /> digital experiences, and print materials."
+                                            title = "THE K 작업 프로세스"
+                                            description = "공기관에 온라인 질의, 유선 문의, 필요 서류 안내, 대리 발급, 서류 작성, 수정, 검토, 각종 일정 안내, 허가에 유리한 추가 자료 및 노하우를 제공합니다."
                                         />
                                 </div>
                             </div>
@@ -92,9 +89,6 @@ const Introduction = () => {
                     </div>
 
                     <Separator />
-                    
-                    <AboutThree />
-
                     <FooterThree />
                 </main>
             </Layout>

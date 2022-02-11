@@ -4,23 +4,23 @@ import ScrollAnimation from "react-animate-on-scroll";
 const TimelineData = [
     {
         id: "1",
-        title: "Knowledge",
-        description: "Present all available features in Essentials.",
+        title: "상담",
+        description: "원하는 방향으로 문제를 해결할 수 있는지 안내해 드립니다.",
     },
     {
         id: "2",
-        title: "Working",
-        description: "All Feature available features in Essentials.",
+        title: "계약",
+        description: "계약이 성사되면 필요한 자료를 요청드릴 수 있습니다.",
     },
     {
         id: "3",
-        title: "Solution",
-        description: "Popular Feature available features in Essentials.",
+        title: "진행",
+        description: "THE K의 노하우로 예상 일정 안내와 함께 업무를 진행합니다.",
     },
     {
         id: "4",
-        title: "Process",
-        description: "Latest Feature available features in Essentials.",
+        title: "해결",
+        description: "온라인 또는 오프라인으로 해결완료 안내를 받을 수 있습니다.",
     },
 ]
 

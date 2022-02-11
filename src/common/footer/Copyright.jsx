@@ -10,7 +10,7 @@ const Copyright = () => {
                             <ul className="ft-menu link-hover">
                                 <li><a href="/Price">요금</a></li>
                                 <li><a href="/Visainquiry">비자 문의</a></li>
-                                <li><a target="_blank" href="https://thekvisa.com" rel="noopener noreferrer">일자리 문의</a></li>
+                                <li><a target="_blank" href="/workinquiry">일자리 문의</a></li>
                                 <li><a target="_blank" href="https://thekvisa.com/visaform" rel="noopener noreferrer">파트너십</a></li>
                             </ul>
                                 <ul className="ft-menu">
