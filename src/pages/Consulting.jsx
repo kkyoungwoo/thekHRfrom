@@ -46,17 +46,6 @@ const Consulting = () => {
                 </div>
                 {/* End Slider area  */}
 
-                <div className="main-content">
-
-                    {/* //Start Elements Area//  */}
-                    <div className="rwt-callto-action-area rn-section-gap">
-                        <div className="wrapper">
-                            <CalltoActionOne />
-                        </div>
-                    </div>
-                    {/* //End Elements Area//  */}
-                    </div>
-
                 <AboutFour image="./images/about/contact-image.jpg" />
 
                 {/* Start Elements Area  */}
