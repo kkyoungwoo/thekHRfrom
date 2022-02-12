@@ -5,8 +5,8 @@ import {Link} from "react-router-dom";
 
 const callToActionData = {
     title: "비자를 만들 준비가 되셨나요?",
-    subtitle: "비자를 위한 최고의 선택",
-    btnText: "THE K visa",
+    subtitle: "비자발급을 위한 최고의 선택",
+    btnText: "THE K VISA",
 }
 
 const CalltoActionFive = () => {

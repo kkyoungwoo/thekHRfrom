@@ -135,8 +135,8 @@ const Entrance = () => {
                                         <SectionTitle
                                             textAlign = "text-center"
                                             radiusRounded = ""
-                                            subtitle = "What we can do for you"
-                                            title = "Services provide for you."
+                                            subtitle = "Difference"
+                                            title = "다른 회사와 다릅니다."
                                             description = "유학생활이 시작된 이후에도 우리는 한국에서 필요한 다양한 서비스를 제공할 수 있습니다."
                                          />
                                     </div>
