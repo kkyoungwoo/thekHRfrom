@@ -48,6 +48,12 @@ const filters = [
             type : "text",
             discription : "Location",
             emailjsText: "location",
+          },
+          {
+            name : "한국어 능력",
+            type : "text",
+            discription : "TOPIK Level or korea proficiency",
+            emailjsText: "lang",
           }
       ]
     },
@@ -92,6 +98,12 @@ const filters = [
             type : "text",
             discription : "Location",
             emailjsText: "location",
+          },
+          {
+            name : "한국어 능력",
+            type : "text",
+            discription : "TOPIK Level or korea proficiency",
+            emailjsText: "lang",
           }
       ]
     },
@@ -136,6 +148,12 @@ const filters = [
             type : "text",
             discription : "Location",
             emailjsText: "location",
+          },
+          {
+            name : "한국어 능력",
+            type : "text",
+            discription : "TOPIK Level or korea proficiency",
+            emailjsText: "lang",
           }
       ]
     },
@@ -180,6 +198,12 @@ const filters = [
             type : "text",
             discription : "Location",
             emailjsText: "location",
+          },
+          {
+            name : "한국어 능력",
+            type : "text",
+            discription : "TOPIK Level or korea proficiency",
+            emailjsText: "lang",
           }
       ]
     },
@@ -224,6 +248,12 @@ const filters = [
             type : "text",
             discription : "Location",
             emailjsText: "location",
+          },
+          {
+            name : "한국어 능력",
+            type : "text",
+            discription : "TOPIK Level or korea proficiency",
+            emailjsText: "lang",
           }
       ]
     },
@@ -274,6 +304,12 @@ const filters = [
             type : "file",
             discription : "my_file",
             emailjsText: "my_file",
+          },
+          {
+            name : "한국어 능력",
+            type : "text",
+            discription : "TOPIK Level or korea proficiency",
+            emailjsText: "lang",
           }
       ]
     },
@@ -318,6 +354,12 @@ const filters = [
             type : "text",
             discription : "Location",
             emailjsText: "location",
+          },
+          {
+            name : "한국어 능력",
+            type : "text",
+            discription : "TOPIK Level or korea proficiency",
+            emailjsText: "lang",
           }
       ]
     },
