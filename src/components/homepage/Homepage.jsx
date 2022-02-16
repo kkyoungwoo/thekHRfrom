@@ -36,9 +36,6 @@ function Homepage() {
                         <Route path="/admin" exact>
                             <Admin />
                         </ Route>
-                        <Route path="/form" exact>
-                            <Form />
-                        </ Route>succeeded
                         <Route path="/succeeded" exact>
                             <Succeeded />
                         </ Route>
