@@ -248,10 +248,14 @@ function ForeignerForm() {
                         <div>13. {language_type ? "경험(능력)" : "Experience"}</div>
                         <input type="text" name="certificate" placeholder=''/>
                     </div>
+                    <div className="input_text">
+                        <div>14. {language_type ? "당신은 지역을 옮길 수 있나요?" : "Can you move where you live?"}</div>
+                        <input type="text" name="place" placeholder='Yes or No'/>
+                    </div>
                     <div className="send_file">
                         <div>
                             <div>
-                                14. {language_type ? "자기소개서 첨부" : "Self-introduction"}
+                                15. {language_type ? "자기소개서 첨부" : "Self-introduction"}
                             </div>
                             <div className='send_file_sub_text'>
                                 {language_type ? "(최대 500KB)" : "(Up to 500KB)"}
@@ -260,13 +264,13 @@ function ForeignerForm() {
                         </div>
                     </div>
                     <div className="textarea_text">
-                        <div>15. {language_type ? "기타내용" : "Other contents"}</div>
+                        <div>16. {language_type ? "기타내용" : "Other contents"}</div>
                         <textarea name="textarea" id="" cols="100%" rows="10" style={{ fontFamily: "GmarketSansMedium", resize: "none"}}></textarea>
                     </div>
                     <div className="input_text"style={{
                             marginTop:"20px"
                         }}>
-                        <div>16. {language_type ? "소개자" : "Introducer"}</div>
+                        <div>17. {language_type ? "소개자" : "Introducer"}</div>
                         <input type="text" name="introducer"/>
                     </div>
                     <button className="submit_btn" type="submit" onClick={loading}>

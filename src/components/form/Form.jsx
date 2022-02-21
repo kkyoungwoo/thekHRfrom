@@ -212,10 +212,14 @@ function ForeignerForm() {
                         <div>10. {language_type ? "하고 싶은 일" : "what you want to do"}</div>
                         <input type="text" name="want" placeholder='EX) anything'/>
                     </div>
+                    <div className="input_text">
+                        <div>11. {language_type ? "당신은 지역을 옮길 수 있나요?" : "Can you move where you live?"}</div>
+                        <input type="text" name="place" placeholder='Yes or No'/>
+                    </div>
                     <div className="send_file">
                         <div>
                             <div>
-                                11. {language_type ? "자기소개서 첨부" : "Self-introduction"}
+                                12. {language_type ? "자기소개서 첨부" : "Self-introduction"}
                             </div>
                             <div className='send_file_sub_text'>
                                 {language_type ? "(최대 500KB)" : "(Up to 500KB)"}
@@ -226,7 +230,7 @@ function ForeignerForm() {
                     <div className="input_text"style={{
                             marginTop:"100px"
                         }}>
-                        <div>12. {language_type ? "소개자" : "Introducer"}</div>
+                        <div>13. {language_type ? "소개자" : "Introducer"}</div>
                         <input type="text" name="introducer"/>
                     </div>
                     <button className="submit_btn" type="submit" onClick={loading}>
