@@ -3,7 +3,7 @@ import './footer.css'
 
 function Footer() {
     return (
-        <div className='footer'>
+        <div className='footer' style={{display:"none"}}>
             <div className='pc_footer'>
                 <div>
                     TEL : 053-965-0516 | FAX : 053-965-0514 | E-MAIL : bizdb@kakao.com | 채용 관련 상담 : 010-4242-3088

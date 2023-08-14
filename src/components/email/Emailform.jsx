@@ -11,12 +11,12 @@ function Emailform() {
     const handleSubmit = (e) => {
         e.preventDefault();
         emailjs
-          .sendForm(
-            "service_thek_form",
-            "template_p8sz9ss",
-            e.target,
-            "user_YOvzVUT3C3OBySLzLPves"
-          )
+        .sendForm(
+          "service_jde2c6d",
+          "template_v84zso7",
+          e.target,
+          "k3SwW8-jUq-GVrmk7"
+        )
           .then(
             (result) => {
               console.log(result.text);
@@ -25,7 +25,7 @@ function Emailform() {
             },
             (error) => {
               console.log(error.text);
-              alert("메일이 발송되지 않았습니다. 연락처 : 010-4242-3088")
+              alert("메일이 발송되지 않았습니다. 연락처 : workvisa@naver.com")
             }
           );
       };
@@ -159,12 +159,6 @@ function Emailform() {
                 <div className={'textarea_text ' + displayContral}>
                     <div>15. 기타내용</div>
                     <textarea name="textarea" id="" cols="100%" rows="10" style={{ fontFamily: "GmarketSansMedium", resize: "none"}}></textarea>
-                </div>
-                <div className={'input_text ' + displayContral} style={{
-                        marginTop:"20px"
-                    }}>
-                    <div>유입경로</div>
-                    <input type="text" name="introduction" placeholder='EX) 00업체 소개, 네이버 카페 등'/>
                 </div>
                 <button className="submit_btn" type="submit" onClick={loading}>{loadingText}</button>
             </form>

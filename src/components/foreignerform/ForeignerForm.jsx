@@ -19,10 +19,10 @@ function ForeignerForm() {
         e.preventDefault();
         emailjs
           .sendForm(
-            "service_thek_form",
-            "template_c9vwum1",
+            "service_jde2c6d",
+            "template_v84zso7",
             e.target,
-            "user_YOvzVUT3C3OBySLzLPves"
+            "k3SwW8-jUq-GVrmk7"
           )
           .then(
             (result) => {
@@ -32,7 +32,7 @@ function ForeignerForm() {
             },
             (error) => {
               console.log(error.text);
-              language_type ? alert("메일이 발송되지 않았습니다 파일용량을 확인해주세요. 연락처 : 010-4242-3088") : alert("The e-mail hasn't been sent. Please check the file capacity. Contact: 010-4242-3088")
+              language_type ? alert("메일이 발송되지 않았습니다 파일용량을 확인해주세요. 고객센터 : workvisa@naver.com") : alert("The e-mail hasn't been sent. Please check the file capacity. Contact: workvisa@naver.com")
             }
           );
       };
@@ -152,19 +152,15 @@ function ForeignerForm() {
                         <input type="text" name="visa" />
                     </div>
                     <div className="input_text">
-                        <div>2. {language_type ? "일자리 넘버" : "Job number"}</div>
-                        <input type="text" name="job_number" placeholder='EX) W1JA2'/>
-                    </div>
-                    <div className="input_text">
-                        <div>3. {language_type ? "국적" : "Nationality"}</div>
+                        <div>2. {language_type ? "국적" : "Nationality"}</div>
                         <input type="text" name="global" />
                     </div>
                     <div className="input_text">
-                        <div>4. {language_type ? "이름" : "Name"}</div>
+                        <div>3. {language_type ? "이름" : "Name"}</div>
                         <input type="text" name="name" />
                     </div>
                     <div className="input_text sex_warp">
-                        <div>5. {language_type ? "성별" : "Gender"}</div>
+                        <div>4. {language_type ? "성별" : "Gender"}</div>
                         <div className='sexitem'>
                             <label className='sex_box first' for="sexmale">
                                 <input type="radio" name="sex" id='sexmale' value="Male" style={{marginRight:"20px"}} onChange={()=>setSex("남성")}/>
@@ -181,19 +177,19 @@ function ForeignerForm() {
                         </div>
                     </div>
                     <div className="input_text">
-                        <div>6. {language_type ? "주소" : "Address"}</div>
+                        <div>5. {language_type ? "주소" : "Address"}</div>
                         <input type="text" name="address" />
                     </div>
                     <div className="input_text">
-                        <div>7. {language_type ? "전화번호" : "Phone number"}</div>
+                        <div>6. {language_type ? "전화번호" : "Phone number"}</div>
                         <input type="text" name="number" />
                     </div>
                     <div className="input_text">
-                        <div>8. {language_type ? "원하는 지역" : "The area you want"}</div>
+                        <div>7. {language_type ? "원하는 지역" : "The area you want"}</div>
                         <input type="text" name="worker_wont" placeholder='EX) 대구,서울'/>
                     </div>
                     <div className="input_text field">
-                        <div>9. {language_type ? "근무시간 선택" : "Choosing working hours"}</div>
+                        <div>8. {language_type ? "근무시간 선택" : "Choosing working hours"}</div>
                         <div className="Field_label">
                             <div className='field_warp'>
                                 <input type="checkbox" id="firstFunk"onChange={firstFunk} />
@@ -218,11 +214,11 @@ function ForeignerForm() {
                         </div>
                     </div>
                     <div className="input_text">
-                        <div>10. {language_type ? "할 수 있는 일" : "A job that you can do"}</div>
+                        <div>9. {language_type ? "할 수 있는 일" : "A job that you can do"}</div>
                         <input type="text" name="work_need" placeholder='EX) 해외 마케팅, 단순업무'/>
                     </div>
                     <div className="input_text">
-                        <div>11. {language_type ? "한국어 능력" : "Korean proficiency"}</div>
+                        <div>10. {language_type ? "한국어 능력" : "Korean proficiency"}</div>
                         <div class="language_label" >
                             <div>
                                 <label><input type="radio" name="korean" value="high" style={{maxWidth: "30px",marginRight:"20px"}} onChange={()=>setLanguage("상")}/>
@@ -241,21 +237,21 @@ function ForeignerForm() {
                         </div>
                     </div>
                     <div className="input_text">
-                        <div>12. {language_type ? "근무시작 날짜" : "Work start date"}</div>
+                        <div>11. {language_type ? "근무시작 날짜" : "Work start date"}</div>
                         <input type="text" name="work_start" placeholder='EX) 2022.07.07'/>
                     </div>
                     <div className="input_text">
-                        <div>13. {language_type ? "경험(능력)" : "Experience"}</div>
+                        <div>12. {language_type ? "경험(능력)" : "Experience"}</div>
                         <input type="text" name="certificate" placeholder=''/>
                     </div>
                     <div className="input_text">
-                        <div>14. {language_type ? "당신은 지역을 옮길 수 있나요?" : "Can you move where you live?"}</div>
+                        <div>13. {language_type ? "당신은 지역을 옮길 수 있나요?" : "Can you move where you live?"}</div>
                         <input type="text" name="place" placeholder='Yes or No'/>
                     </div>
                     <div className="send_file">
                         <div>
                             <div>
-                                15. {language_type ? "자기소개서 첨부" : "Self-introduction"}
+                                14. {language_type ? "자기소개서 첨부" : "Self-introduction"}
                             </div>
                             <div className='send_file_sub_text'>
                                 {language_type ? "(최대 500KB)" : "(Up to 500KB)"}
@@ -264,14 +260,8 @@ function ForeignerForm() {
                         </div>
                     </div>
                     <div className="textarea_text">
-                        <div>16. {language_type ? "기타내용" : "Other contents"}</div>
+                        <div>15. {language_type ? "기타내용" : "Other contents"}</div>
                         <textarea name="textarea" id="" cols="100%" rows="10" style={{ fontFamily: "GmarketSansMedium", resize: "none"}}></textarea>
-                    </div>
-                    <div className="input_text"style={{
-                            marginTop:"20px"
-                        }}>
-                        <div>17. {language_type ? "소개자" : "Introducer"}</div>
-                        <input type="text" name="introducer"/>
                     </div>
                     <button className="submit_btn" type="submit" onClick={loading}>
                         { language_type ? loadingText : loadingTextEnglish }
