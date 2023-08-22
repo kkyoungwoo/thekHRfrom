@@ -30,7 +30,7 @@ function Header() {
             <header>
                     <Link to="/" onClick={getSiteTop}>
                         <div className="logo_text">
-                            THE K <span>컨설팅</span>
+                            <span>워크비자</span>
                         </div>
                     </Link>
                     <nav>
@@ -76,11 +76,6 @@ function Header() {
                                         <div className='sub_header_text'>Advice</div>
                                     </Link>
                                     */} 
-                                </li>
-                                <li>
-                                    <Link to="/admin" className="linkbtn" onClick={useCallbackBtn} checked={navBtn}>
-                                        <div>　</div>
-                                    </Link>
                                 </li>
                         </ul>
                     </nav>

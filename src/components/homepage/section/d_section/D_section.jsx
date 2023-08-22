@@ -21,12 +21,12 @@ function D_section() {
                 <div className='btn_warp_text first'>외국인 채용, 오히려 쉽습니다.</div>
                 <div className='btn_position'>
                     <div>
-                        <a className='btn_warp_text middle_btn secoend' href="./assets/main_page/thek.pdf"  target="_blank"  rel = "noopener noreferrer" >
+                        <a className='btn_warp_text middle_btn secoend' href="./assets/main_page/company_info.pdf"  target="_blank"  rel = "noopener noreferrer" >
                             제안서 다운로드
                         </a>
                     </div>
                     <div>
-                        <a className='btn_warp_text middle_btn third' href="http://kko.to/n8b_ti6vb" target="_blank"  rel = "noopener noreferrer" >
+                        <a className='btn_warp_text middle_btn third' href="http://kko.to/3LPuu7_O1g" target="_blank"  rel = "noopener noreferrer" >
                             찾아오시는 길
                         </a>
                     </div>
